@@ -431,7 +431,7 @@ def plot_fig5_continuous_chaos(out_rows: list[dict[str, object]], summary_record
     ax_delivery.set_xlabel("Time (ms)")
     ax_control.yaxis.set_major_formatter(FuncFormatter(thousands))
     ax_control.tick_params(labelbottom=False)
-    bar_labels = {"snn_sra": "NEURA", "ospf_te": "OSPF", "triggered_te": "Triggered", "te_ecmp": "ECMP", "bandit": "Bandit"}
+    bar_labels = {"snn_sra": "NEURA", "ospf_te": "OSPF-TE", "triggered_te": "Triggered-TE", "te_ecmp": "TE+ECMP", "bandit": "Bandit"}
     xbar = list(range(len(summary_methods)))
     record_by_method = {str(r["method"]): r for r in summary_records}
     ax_cost.bar(
@@ -454,7 +454,8 @@ def plot_fig5_continuous_chaos(out_rows: list[dict[str, object]], summary_record
     ax_churn.set_ylabel("Route changes\nper node")
     ax_churn.yaxis.set_major_formatter(FuncFormatter(thousands))
     for ax in [ax_cost, ax_churn]:
-        ax.set_xticks(xbar, [bar_labels[m] for m in summary_methods])
+        ax.set_xticks(xbar, [bar_labels[m] for m in summary_methods], rotation=18, ha="right")
+        ax.tick_params(axis="x", labelsize=7)
         style_axis(ax)
     add_shared_legend(fig, [ax_control], timeline_methods, y=0.995)
     fig.subplots_adjust(left=0.075, right=0.995, bottom=0.105, top=0.88)
@@ -926,7 +927,7 @@ def gen_fig5_continuous_chaos() -> None:
         window_lines_delivery.append(rf"\addplot+[black!30, densely dashed, mark=none, forget plot] coordinates {{({start_ms},80) ({start_ms},101)}};")
         window_lines_delivery.append(rf"\addplot+[black!30, densely dashed, mark=none, forget plot] coordinates {{({end_ms},80) ({end_ms},101)}};")
 
-    bar_key = {"snn_sra": "NEURA", "ospf_te": "OSPF", "triggered_te": "Triggered", "te_ecmp": "ECMP", "bandit": "Bandit"}
+    bar_key = {"snn_sra": "NEURA", "ospf_te": "OSPF-TE", "triggered_te": "Triggered-TE", "te_ecmp": "TE+ECMP", "bandit": "Bandit"}
     xcoords = ",".join(bar_key[m] for m in summary_methods)
     xticklabels = ",".join(bar_key[m] for m in summary_methods)
     control_bars = "\n".join(

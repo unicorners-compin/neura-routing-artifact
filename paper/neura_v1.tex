@@ -1,4 +1,4 @@
-% !TeX root = neura.tex
+% !TeX root = neura_v1.tex
 % !TeX program = latexmk
 \documentclass[5p,times]{elsarticle}
 
@@ -115,7 +115,7 @@ The main contributions of this work are summarized as follows.
 \item The resulting operating point is characterized analytically and experimentally. Mechanism-level analysis gives per-candidate update-rate bounds and a perturbation attenuation condition, while simulations and packet-level ns-3 validation show that NEURA can preserve useful delivery with substantially lower control activity and route churn than representative periodic, event-driven, multipath, and lightweight learning-based baselines.
 \end{enumerate}
 
-The remainder of this paper is organized as follows. Section II reviews related work. Section III formulates routing-control amplification. Section IV specifies NEURA. Section V describes the evaluation methodology. Section VI reports the core results. Section VII discusses scope, and Section VIII concludes the paper.
+The remainder of this paper is organized as follows. Section 2 reviews related work. Section 3 formulates routing-control amplification. Section 4 specifies NEURA. Section 5 describes the evaluation methodology. Section 6 reports the core results. Section 7 discusses scope, and Section 8 concludes the paper.
 
 \section{Related Work}
 
@@ -603,7 +603,7 @@ The same qualitative locality pattern appears in the supporting BA-100 and RGG-1
 \input{figures/fig2_blast_radius}
 
 \subsection{Service Preservation and Control Cost Under Increasing Stress}
-The third experiment makes the central systems tradeoff explicit by sweeping the hotspot-demand multiplier while keeping link capacities fixed. Fig.~\ref{fig:stress-tradeoff} reports burst-window delivery, control traffic, and route changes so that the operating point of each method can be compared directly.
+The third experiment makes the central systems tradeoff explicit by sweeping the hotspot-demand multiplier while keeping link capacities fixed. Fig.~\ref{fig:stress-tradeoff} reports burst-window delivery and control traffic, while route-change totals are summarized in the text.
 
 At the representative $3\times$ hotspot workload, NEURA preserves $93.6\%$ burst-window delivery with $9.51$~MB of control traffic. Triggered-TE preserves $97.4\%$ with $54.2$~MB, OSPF-TE preserves $97.3\%$ with $59.6$~MB, TE+ECMP preserves $98.2\%$ with $115.2$~MB, and Bandit preserves $97.9\%$ with $99.6$~MB. Relative to Triggered-TE and OSPF-TE, NEURA gives up about $3.8$ and $3.7$ percentage points of burst-window delivery, respectively, while reducing logical control traffic by roughly a factor of five to six.
 
@@ -676,7 +676,7 @@ The experimental evidence positions NEURA as a distinct low-amplification operat
 The main implication is that severe local stress does not have to force proportionally large network-wide control activity when the routing law is localized, thresholded, suppressive, and recovery-aware. The results suggest that local excitable control is a useful protocol-construction principle for low-overhead self-healing communication systems, with a clear service-overhead tradeoff that is attractive for resource-constrained networks.
 
 \section*{Data and Code Availability}
-The simulation code, ns-3 validation programs, generated figure inputs, and result-audit outputs will be made available in an archival repository. The internal code identifier \texttt{snn\_sra} is a development codename for NEURA and does not denote a separate method.
+The simulation code, ns-3 validation programs, generated figure inputs, and result-audit outputs are available in the public reproduction repository at \url{https://github.com/unicorners-compin/neura-routing-artifact}. The internal code identifier \texttt{snn\_sra} is a development codename for NEURA and does not denote a separate method.
 
 \section*{Funding}
 This work was supported by the National Key Research and Development Program of China (No. 2024YFE0200300).

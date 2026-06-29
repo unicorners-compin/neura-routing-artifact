@@ -79,7 +79,7 @@ every node near coord/.append style={font=\scriptsize, rotate=90, anchor=west, /
 
 \section{Additional Service and Safety Results}
 
-This supplementary material provides the supporting evidence chain for the low-amplification operating point studied in the main paper. It reports additional startup, path-stretch, gray-failure, safety, mechanism-attribution, and parameter-sensitivity results. Together, these results connect the main delivery-control tradeoff to startup usability, bounded detours, routing-safety indicators, mechanism roles, and parameter robustness.
+This supplementary material provides the supporting evidence chain for the low-amplification operating point studied in the main paper. It reports additional startup, path-stretch, topology-family, gray-failure, safety, mechanism-attribution, and parameter-sensitivity results. Together, these results connect the main delivery-control tradeoff to startup usability, bounded detours, topology robustness, routing-safety indicators, mechanism roles, and parameter robustness.
 
 \subsection{Startup Convergence and Path Stretch}
 
@@ -88,6 +88,12 @@ This supplementary material provides the supporting evidence chain for the low-a
 The startup and stretch experiment examines two related questions: how much startup convergence is required before the network becomes fully reachable, and whether the low-overhead operating point is obtained by inflating data-plane routes. Fig.~\ref{fig:startup-and-stretch} reports startup convergence together with burst-window path stretch at the representative $3\times$ hotspot workload.
 
 NEURA reaches full reachability in $40$~ms on average, faster than $88$~ms for OSPF-TE and $62$~ms for Bandit, and matching Triggered-TE at $40$~ms. Its startup control budget is also lower, averaging about $1.76$~MB before full reachability, compared with $2.73$~MB for OSPF-TE, $3.36$~MB for Triggered-TE, and $3.22$~MB for Bandit. Under the representative $3\times$ hotspot workload, NEURA reaches a mean burst-window path stretch of about $1.048$, compared with $1.007$ for OSPF-TE, $1.031$ for Triggered-TE, and $1.002$ for Bandit. These results show that the low-amplification operating point retains fast startup usability and avoids excessive route inflation.
+
+\subsection{Topology-Family Checks}
+
+Topology-family checks were run on connected $100$-node Barab\'asi--Albert (BA-100) and random geometric (RGG-100) graphs to test whether the locality pattern depends on ER-style path mixing. In the BA-100 locality check, NEURA emits about $83.4$ hotspot-window updates and keeps all of them within two hops of the stressed region, with a $90$th percentile emission radius of one hop. The matched OSPF-TE periodic check emits about $500$ updates, has a $90$th percentile radius of $2.6$ hops, and spreads a larger share of activity beyond the immediate neighborhood.
+
+The stricter RGG-100 locality check gives the same qualitative result. NEURA emits about $36.2$ hotspot-window updates, keeps all activity within two hops, and has no measured activity beyond five hops. OSPF-TE emits about $420$ updates, keeps only about $27.6\%$ of hotspot-window updates within two hops, and places about $38.8\%$ of activity at five or more hops. On the RGG-100 $3\times$ stress sweep, NEURA preserves $51.9\%$ burst-window delivery with $14.86$~MB of control traffic and about $181$ route changes per node, while OSPF-TE preserves $55.5\%$ with $72.97$~MB and about $664$ route changes per node. Triggered-TE preserves $50.5\%$ with $75.66$~MB and about $210$ route changes per node. Thus, changing the topology family changes the absolute service level, especially in spatially constrained graphs, but preserves the low-amplification ordering.
 
 \subsection{Gray-Failure Validation}
 
@@ -214,5 +220,8 @@ No measurable effect in the tested locality range \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+\section*{Data and Code Availability}
+The code and curated artifacts used for the supplementary analyses are available in the public NEURA reproduction repository at \url{https://github.com/unicorners-compin/neura-routing-artifact}. The internal package name \texttt{snn\_sra\_sim} is a development identifier for the NEURA implementation.
 
 \end{document}
