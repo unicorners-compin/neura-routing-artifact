@@ -96,6 +96,5 @@ The cover letter source is also provided in `paper/cover_letter.tex`.
 
 ## License
 
-No reuse license is granted until the authors add an explicit `LICENSE` file.
-For anonymous or archival review, cite the manuscript title above and this
-repository snapshot.
+This reproduction package is released under the BSD 3-Clause License. See
+`LICENSE` for the full terms.
