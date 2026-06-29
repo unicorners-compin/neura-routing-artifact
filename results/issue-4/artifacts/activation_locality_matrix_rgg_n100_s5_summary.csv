@@ -1,0 +1,5 @@
+method,peak_event_rate,initial_convergence_tick,active_node_ratio,total_emit_events_under_hotspot,weighted_mean_emit_distance,near_emit_share_h2,far_emit_share_h5,hotspot_emit_share,far_quiet_ratio_h5,outer_quiet_ratio_h3,max_active_distance,p90_emit_radius,distance_emit_correlation
+snn_baseline,20558.4,,0.088,36.0,0.6819239306753181,1.0,0.0,0.31807606932468196,1.0,1.0,0.8,0.8,-0.4482833290258833
+snn_full,18763.0,,0.12200000000000003,36.2,0.9068492781728075,1.0,0.0,0.09315072182719242,1.0,1.0,1.0,1.0,-0.5471888533453245
+ospf_te_t5,15859.8,23.8,1.0,420.0,3.9661904761904765,0.27571428571428575,0.3880952380952381,0.01,0.0,0.0,8.2,6.8,0.06440575404107862
+ospf_te_t1,74289.6,10.4,1.0,2100.0,3.9540000000000006,0.278,0.386,0.01,0.0,0.0,8.2,6.8,

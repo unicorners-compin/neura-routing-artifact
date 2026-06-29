@@ -1,0 +1,19 @@
+{
+  "method": "neura",
+  "scenario": "hotspot",
+  "nodes": 24,
+  "seed": 52,
+  "flows": 10,
+  "edges": 55,
+  "primary_delivery_ratio": 0.980932,
+  "primary_mean_delay_ms": 22.316289,
+  "primary_goodput_mbps": 11.539925,
+  "background_delivery_ratio": 0.922993,
+  "route_changes": 11,
+  "tail_switches": 1,
+  "logical_control_bytes": 1664,
+  "ns3_control_tx_bytes": 3120,
+  "ns3_control_rx_bytes": 3120,
+  "control_packets": 52,
+  "ospf_emissions": 0
+}

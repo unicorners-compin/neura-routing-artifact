@@ -1,0 +1,25 @@
+{
+  "tick_ms": 100,
+  "link_rate_mbps": 10.000000,
+  "link_delay_ms": 2.000000,
+  "queue_packets": 20,
+  "total_simulation_seconds": 7.100000,
+  "data": {
+    "tx_bytes": 107127640,
+    "rx_bytes": 107080498,
+    "tx_packets": 89380,
+    "rx_packets": 89341,
+    "lost_packets": 39,
+    "delivery_ratio": 0.999560,
+    "mean_delay_ms": 3.732378
+  },
+  "control": {
+    "tx_bytes": 1629660,
+    "rx_bytes": 1629660,
+    "tx_packets": 27161,
+    "rx_packets": 27161,
+    "lost_packets": 0,
+    "delivery_ratio": 1.000000,
+    "mean_delay_ms": 2.153595
+  }
+}

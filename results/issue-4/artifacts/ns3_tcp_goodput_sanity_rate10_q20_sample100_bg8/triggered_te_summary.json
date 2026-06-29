@@ -1,0 +1,20 @@
+{
+  "method": "triggered_te",
+  "queue_packets": 20,
+  "sample_ms": 100.000000,
+  "primary_delivery_ratio": 0.998931,
+  "primary_mean_delay_ms": 10.390218,
+  "primary_tx_bytes": 13196592,
+  "primary_rx_bytes": 13182480,
+  "primary_overall_goodput_mbps": 8.788320,
+  "primary_burst_goodput_mbps": 7.362496,
+  "background_delivery_ratio": 0.977791,
+  "background_tx_bytes": 6137544,
+  "background_rx_bytes": 6001236,
+  "route_changes": 42,
+  "tail_switches": 22,
+  "tcp_cwnd_drop_events": 454,
+  "tcp_cwnd_min_bytes": 6968,
+  "tcp_cwnd_max_bytes": 40736,
+  "final_selected_path": "a"
+}

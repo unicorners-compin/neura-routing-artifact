@@ -1,0 +1,216 @@
+{
+  "config": {
+    "seeds": [
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "sweep": {
+      "threshold": [
+        1.1,
+        1.4,
+        1.7
+      ],
+      "refractory_ticks": [
+        2,
+        4,
+        6
+      ],
+      "memory_decay": [
+        0.55,
+        0.78,
+        0.9
+      ],
+      "slow_weight": [
+        0.15,
+        0.35,
+        0.55
+      ]
+    }
+  },
+  "default_full_params": {
+    "leak": 0.15,
+    "threshold": 1.4,
+    "refractory_ticks": 4,
+    "min_emit_ticks": 3,
+    "delta_threshold": 0.05,
+    "ttl": 12,
+    "alpha": 1.0,
+    "beta": 0.5,
+    "gamma": 0.8,
+    "damage_boost": 1.5,
+    "w_damage": 2.0,
+    "w_edge": 1.0,
+    "w_self_pressure": 1.0,
+    "w_nh_pressure": 0.5,
+    "w_memory": 0.5,
+    "inhibit_penalty": 0.18,
+    "inhibit_release": 0.08,
+    "score_scale": 10.0,
+    "memory_decay": 0.78,
+    "memory_pressure_gain": 0.28,
+    "memory_damage_gain": 0.6,
+    "memory_switch_gain": 0.35,
+    "fast_leak": 0.24,
+    "slow_decay": 0.88,
+    "slow_leak": 0.08,
+    "fast_route_gain": 1.0,
+    "fast_pressure_gain": 0.5,
+    "fast_damage_gain": 1.2,
+    "slow_pressure_gain": 0.1,
+    "slow_damage_gain": 0.22,
+    "slow_weight": 0.35,
+    "switch_guard": 0.45,
+    "rebound_guard": 0.35,
+    "selected_memory_boost": 0.25,
+    "deselected_memory_boost": 0.55
+  },
+  "summary": [
+    {
+      "parameter": "threshold",
+      "value": 1.1,
+      "burst_delivery_ratio_mean": 0.9247472384971,
+      "burst_delivery_ratio_ci95": 0.05564395416541668,
+      "total_emitted_updates_mean": 236179.8,
+      "total_emitted_updates_ci95": 34179.66082059306,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "threshold",
+      "value": 1.4,
+      "burst_delivery_ratio_mean": 0.9231109020801078,
+      "burst_delivery_ratio_ci95": 0.05996468445553274,
+      "total_emitted_updates_mean": 204353.4,
+      "total_emitted_updates_ci95": 28976.417633805875,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "threshold",
+      "value": 1.7,
+      "burst_delivery_ratio_mean": 0.9125550865626103,
+      "burst_delivery_ratio_ci95": 0.06378354040133598,
+      "total_emitted_updates_mean": 178381.6,
+      "total_emitted_updates_ci95": 29842.58216789586,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "refractory_ticks",
+      "value": 2,
+      "burst_delivery_ratio_mean": 0.9256577220438421,
+      "burst_delivery_ratio_ci95": 0.05461303417671713,
+      "total_emitted_updates_mean": 224141.2,
+      "total_emitted_updates_ci95": 35965.58846386896,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "refractory_ticks",
+      "value": 4,
+      "burst_delivery_ratio_mean": 0.9231109020801078,
+      "burst_delivery_ratio_ci95": 0.05996468445553274,
+      "total_emitted_updates_mean": 204353.4,
+      "total_emitted_updates_ci95": 28976.417633805875,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "refractory_ticks",
+      "value": 6,
+      "burst_delivery_ratio_mean": 0.9233639323928667,
+      "burst_delivery_ratio_ci95": 0.060923818980859086,
+      "total_emitted_updates_mean": 161922.6,
+      "total_emitted_updates_ci95": 21815.45958902209,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "memory_decay",
+      "value": 0.55,
+      "burst_delivery_ratio_mean": 0.923628398338664,
+      "burst_delivery_ratio_ci95": 0.05766376576609962,
+      "total_emitted_updates_mean": 204823.4,
+      "total_emitted_updates_ci95": 27949.594451247696,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "memory_decay",
+      "value": 0.78,
+      "burst_delivery_ratio_mean": 0.9231109020801078,
+      "burst_delivery_ratio_ci95": 0.05996468445553274,
+      "total_emitted_updates_mean": 204353.4,
+      "total_emitted_updates_ci95": 28976.417633805875,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "memory_decay",
+      "value": 0.9,
+      "burst_delivery_ratio_mean": 0.9215351420918731,
+      "burst_delivery_ratio_ci95": 0.0657564524825567,
+      "total_emitted_updates_mean": 205498.4,
+      "total_emitted_updates_ci95": 29167.3051003965,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "slow_weight",
+      "value": 0.15,
+      "burst_delivery_ratio_mean": 0.9229902501109087,
+      "burst_delivery_ratio_ci95": 0.06166206357364714,
+      "total_emitted_updates_mean": 205442.8,
+      "total_emitted_updates_ci95": 29135.5806477548,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "slow_weight",
+      "value": 0.35,
+      "burst_delivery_ratio_mean": 0.9231109020801078,
+      "burst_delivery_ratio_ci95": 0.05996468445553274,
+      "total_emitted_updates_mean": 204353.4,
+      "total_emitted_updates_ci95": 28976.417633805875,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    },
+    {
+      "parameter": "slow_weight",
+      "value": 0.55,
+      "burst_delivery_ratio_mean": 0.923223309439669,
+      "burst_delivery_ratio_ci95": 0.059771867288594606,
+      "total_emitted_updates_mean": 204359.2,
+      "total_emitted_updates_ci95": 28976.727694753663,
+      "rebound_ratio_after_release_mean": 0.002505050505050505,
+      "rebound_ratio_after_release_ci95": 0.0021243887325513478,
+      "post_stage2_route_changes_mean": 0.0,
+      "post_stage2_route_changes_ci95": 0.0
+    }
+  ]
+}

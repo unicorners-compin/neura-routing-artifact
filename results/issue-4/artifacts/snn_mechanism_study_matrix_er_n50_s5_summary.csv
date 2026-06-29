@@ -1,0 +1,6 @@
+section,variant,initial_convergence_tick,peak_event_rate,hotspot_escape_ratio,post_hotspot_route_changes,post_hotspot_fire_ratio,stabilization_tick,emitted_updates,route_changes,post_event_route_changes,fire_rate_gain,memory_rebound_fire_ratio_delta,memory_post_hotspot_route_change_delta,memory_emitted_update_delta,inhibition_escape_ratio_delta,inhibition_fire_rate_gain_delta,inhibition_post_hotspot_route_change_delta,dual_stabilization_tick_delta,dual_post_hotspot_fire_ratio_delta,dual_fire_rate_gain_delta
+variant_mean,baseline,6.6,2832.6,0.011510204081632653,25.4,0.2186346873432234,29.2,24264.2,2648.6,2648.6,1.3238104810275149,,,,,,,,,
+variant_mean,memory_only,6.6,2832.6,0.015102040816326531,6.0,0.10237283694886315,28.4,20198.0,2614.4,2614.4,1.1222911497497434,,,,,,,,,
+variant_mean,memory_inhibition,6.6,2626.4,0.009877551020408163,0.0,0.17577834185673225,26.0,19189.6,2313.8,2313.8,1.0937171439205478,,,,,,,,,
+variant_mean,full,6.6,2626.4,0.009877551020408163,0.0,0.164069604207348,26.0,19225.4,2313.8,2313.8,1.1646810454387724,,,,,,,,,
+study_mean,study_delta,,,,,,,,,,,-0.11626185039436024,-19.4,-4066.2,-0.0052244897959183665,-0.02857400582919558,-6.0,0.0,-0.011708737649384238,0.07096390151822454

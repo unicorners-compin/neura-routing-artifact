@@ -1,0 +1,8 @@
+chaos_peak_event_rate_k,chaos_route_changes_per_node,label,panel,post_stage2_route_changes,rebound_ratio_pct,variant
+,,Minimal core,memory,21.0,1.5696969696969698,baseline
+,,Memory only,memory,0.0,1.395959595959596,memory_only
+,,Full NEURA,memory,0.0,0.2828282828282828,full
+29.6818,100.078,Full NEURA,chaos,,,full
+29.6818,100.05,No memory,chaos,,,no_memory
+41.6104,125.904,No switch suppression,chaos,,,no_inhibition
+29.6818,100.096,No slow state,chaos,,,no_slow

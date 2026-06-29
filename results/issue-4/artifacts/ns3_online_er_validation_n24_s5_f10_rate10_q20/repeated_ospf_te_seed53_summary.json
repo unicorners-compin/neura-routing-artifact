@@ -1,0 +1,19 @@
+{
+  "method": "ospf_te",
+  "scenario": "repeated",
+  "nodes": 24,
+  "seed": 53,
+  "flows": 10,
+  "edges": 75,
+  "primary_delivery_ratio": 1.000000,
+  "primary_mean_delay_ms": 7.184173,
+  "primary_goodput_mbps": 11.764240,
+  "background_delivery_ratio": 0.923180,
+  "route_changes": 40,
+  "tail_switches": 20,
+  "logical_control_bytes": 541504,
+  "ns3_control_tx_bytes": 1015320,
+  "ns3_control_rx_bytes": 1015320,
+  "control_packets": 16922,
+  "ospf_emissions": 111
+}

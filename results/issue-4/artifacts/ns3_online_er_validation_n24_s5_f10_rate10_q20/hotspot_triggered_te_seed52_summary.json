@@ -1,0 +1,19 @@
+{
+  "method": "triggered_te",
+  "scenario": "hotspot",
+  "nodes": 24,
+  "seed": 52,
+  "flows": 10,
+  "edges": 55,
+  "primary_delivery_ratio": 0.984899,
+  "primary_mean_delay_ms": 22.402191,
+  "primary_goodput_mbps": 11.586589,
+  "background_delivery_ratio": 0.922139,
+  "route_changes": 22,
+  "tail_switches": 12,
+  "logical_control_bytes": 3328,
+  "ns3_control_tx_bytes": 6240,
+  "ns3_control_rx_bytes": 6240,
+  "control_packets": 104,
+  "ospf_emissions": 0
+}

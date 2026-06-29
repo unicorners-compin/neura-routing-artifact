@@ -1,0 +1,6 @@
+nodes,method,trials,mean_initial_convergence_tick,mean_first_emit_latency_from_burst,mean_steady_pre_burst_emit_rate,mean_under_burst_emit_rate,mean_peak_event_rate,mean_emitted_updates,mean_received_updates,mean_fire_count,mean_pair_reachability_ratio,mean_loop_ratio,mean_blackhole_ratio,mean_steady_pre_burst_mean_interval,mean_under_burst_mean_interval
+100,ospf_te_t1,5,4.0,0.0,1.0,1.0,59043.6,5216026.2,5103903.0,0.0,1.0,0.0,0.0,1.0,1.0
+100,ospf_te_t10,5,31.0,7.0,0.1,0.076923,59043.6,433494.6,428127.0,0.0,1.0,0.0,0.0,,10.0
+100,ospf_te_t2,5,7.0,1.0,0.5,0.5,59043.6,2559064.2,2532226.2,0.0,1.0,0.0,0.0,2.0,2.0
+100,ospf_te_t5,5,16.0,2.0,0.2,0.192308,59043.6,964887.0,954151.8,0.0,1.0,0.0,0.0,5.0,5.0
+100,snn_sra,5,4.0,6.0,0.0,0.192308,29767.8,165954.6,169393.4,27901.8,1.0,0.0,0.0,,4.0

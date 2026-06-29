@@ -1,0 +1,5 @@
+section,variant,initial_convergence_tick,peak_event_rate,stage1_escape_ratio,rebound_ratio_after_release,post_stage2_route_changes,return_to_stage1_ratio,after_stage2_fire_ratio,emitted_updates,route_changes,post_event_route_changes,memory_rebound_ratio_delta,memory_post_stage2_route_change_delta,memory_return_to_stage1_ratio_delta,memory_after_stage2_fire_ratio_delta,memory_emitted_update_delta,full_rebound_ratio_delta,full_post_stage2_route_change_delta,full_return_to_stage1_ratio_delta,full_after_stage2_fire_ratio_delta,full_emitted_update_delta
+variant_mean,baseline,4.0,40947.2,0.01709090909090909,0.0156969696969697,21.0,0.013575757575757574,0.0,208421.8,12354.0,12354.0,,,,,,,,,,
+variant_mean,memory_only,4.0,40947.2,0.01709090909090909,0.01395959595959596,0.0,0.01395959595959596,0.0,180760.0,12315.8,12315.8,,,,,,,,,,
+variant_mean,full,4.0,29754.0,0.01581818181818182,0.0028282828282828283,0.0,0.0028282828282828283,0.0,165540.2,9490.6,9490.6,,,,,,,,,,
+study_mean,delta,,,,,,,,,,,-0.0017373737373737388,-21.0,0.0003838383838383856,0.0,-27661.79999999999,-0.01286868686868687,-21.0,-0.010747474747474745,0.0,-42881.59999999998

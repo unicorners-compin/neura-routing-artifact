@@ -1,0 +1,4 @@
+method,scenario,topology,nodes,seed,mbps_per_unit,link_rate_mbps,queue_packets,sim_control_bytes,sim_data_bytes,sim_delivery_ratio,ns3_control_delivery_ratio,ns3_data_delivery_ratio,ns3_control_tx_bytes,ns3_control_rx_bytes,ns3_data_tx_bytes,ns3_data_rx_bytes,ns3_control_mean_delay_ms,ns3_data_mean_delay_ms
+snn_sra,hotspot,er,24,51,2.0,10.0,20,186944,104625000,1.0,1.0,0.996958,350520,350520,107117000,106791102,2.067676,12.372919
+triggered_te,hotspot,er,24,51,2.0,10.0,20,869152,104625000,1.0,1.0,0.99956,1629660,1629660,107127640,107080498,2.153595,3.732378
+ospf_te,hotspot,er,24,51,2.0,10.0,20,878336,103693750,1.0,1.0,0.998074,1646880,1646880,106175558,105971054,2.190378,13.144608

@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Online ns-3 ER packet-level validation across five seeds. The controller samples real DropTail queue occupancy every $100$~ms on ER-24 packet-level topologies and rewrites source host routes online. This check is still not a full distributed protocol-stack implementation, but it exercises online packet-queue feedback beyond trace replay and the five-node sanity topology.}
+\label{tab:ns3-online-er}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llrrrr@{}}
+\toprule
+Scenario & Method & \shortstack[c]{Del.\\(\%)} & \shortstack[c]{Ctrl.\\(MB)} & \shortstack[c]{Route\\changes} & \shortstack[c]{Tail\\switches} \\
+\midrule
+Hotspot & NEURA & 97.9 & 0.003 & 10.6 & 0.6 \\
+Hotspot & Triggered-TE & 98.3 & 0.007 & 21.6 & 11.6 \\
+Hotspot & OSPF-TE & 99.9 & 0.885 & 29.2 & 12.0 \\
+\midrule
+Repeated & NEURA & 95.7 & 0.004 & 12.0 & 1.4 \\
+Repeated & Triggered-TE & 96.6 & 0.014 & 43.2 & 23.2 \\
+Repeated & OSPF-TE & 99.8 & 0.895 & 60.8 & 25.2 \\
+\bottomrule
+\end{tabular*}
+\end{table}

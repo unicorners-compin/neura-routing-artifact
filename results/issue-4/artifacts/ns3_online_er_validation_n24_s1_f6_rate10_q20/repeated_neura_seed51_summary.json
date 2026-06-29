@@ -1,0 +1,19 @@
+{
+  "method": "neura",
+  "scenario": "repeated",
+  "nodes": 24,
+  "seed": 51,
+  "flows": 6,
+  "edges": 72,
+  "primary_delivery_ratio": 1.000000,
+  "primary_mean_delay_ms": 8.818322,
+  "primary_goodput_mbps": 7.058544,
+  "background_delivery_ratio": 0.924246,
+  "route_changes": 6,
+  "tail_switches": 0,
+  "logical_control_bytes": 1024,
+  "ns3_control_tx_bytes": 1920,
+  "ns3_control_rx_bytes": 1920,
+  "control_packets": 32,
+  "ospf_emissions": 0
+}

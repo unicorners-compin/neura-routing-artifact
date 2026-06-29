@@ -1,0 +1,11 @@
+{
+  "record_bytes": 32,
+  "fields": [
+    {"name": "destination_id", "bytes": 4, "description": "Destination identifier"},
+    {"name": "selected_next_hop", "bytes": 4, "description": "Selected next-hop identifier"},
+    {"name": "advertised_route_quality", "bytes": 4, "description": "Advertised downstream route quality"},
+    {"name": "local_stress", "bytes": 4, "description": "Current local stress value"},
+    {"name": "version_and_lifetime", "bytes": 8, "description": "Version sequence and bounded lifetime metadata"},
+    {"name": "reserved_control_metadata", "bytes": 8, "description": "Reserved control metadata budget"}
+  ]
+}

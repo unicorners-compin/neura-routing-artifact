@@ -1,0 +1,35 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{ns-3 validation summary. Replay preserves NEURA's control-byte advantage under real packet headers and shared queues. Queue-signal and TCP checks show that stronger burst transport performance can be obtained, but only with substantially more route rewriting and tail switching.}
+\label{tab:ns3-summary}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Panel & Method & \shortstack[c]{Hotspot\\ctrl. (MB)} & \shortstack[c]{Hotspot\\del. (\%)} & \shortstack[c]{Repeated\\ctrl. (MB)} & \shortstack[c]{Repeated\\del. (\%)} \\
+\midrule
+\multicolumn{6}{l}{\textbf{A. Shared-queue replay}} \\
+\cmidrule(lr){1-6}
+A & NEURA & 0.35 & 99.70 & 0.35 & 99.25 \\
+A & Triggered-TE & 1.63 & 99.96 & 1.63 & 99.89 \\
+A & OSPF-TE & 1.65 & 99.81 & 1.65 & 99.53 \\
+\midrule
+Panel & Method & \shortstack[c]{Route\\changes} & \shortstack[c]{Tail\\switches} & \shortstack[c]{Primary-flow\\del. (\%)} & \shortstack[c]{Final\\path} \\
+\midrule
+\multicolumn{6}{l}{\textbf{B. Queue-signal sanity}} \\
+\cmidrule(lr){1-6}
+B & NEURA & 1 & 0 & 100.0 & b \\
+B & Triggered-TE & 4 & 2 & 100.0 & a \\
+B & OSPF-TE & 12 & 0 & 100.0 & a \\
+\midrule
+Panel & Method & \shortstack[c]{Burst TCP\\goodput (Mbps)} & \shortstack[c]{Route\\changes} & \shortstack[c]{Tail\\switches} & \shortstack[c]{CWND\\drops} \\
+\midrule
+\multicolumn{6}{l}{\textbf{C. TCP CUBIC sanity}} \\
+\cmidrule(lr){1-6}
+C & NEURA & 6.89 & 14 & 7 & 399 \\
+C & Triggered-TE & 7.36 & 42 & 22 & 454 \\
+C & OSPF-TE & 6.77 & 21 & 9 & 319 \\
+\bottomrule
+\end{tabular}
+\end{table}

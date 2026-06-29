@@ -1,0 +1,4 @@
+method,scenario,topology,nodes,seed,mbps_per_unit,link_rate_mbps,queue_packets,sim_control_bytes,sim_data_bytes,sim_delivery_ratio,ns3_control_delivery_ratio,ns3_data_delivery_ratio,ns3_control_tx_bytes,ns3_control_rx_bytes,ns3_data_tx_bytes,ns3_data_rx_bytes,ns3_control_mean_delay_ms,ns3_data_mean_delay_ms
+snn_sra,repeated,er,24,51,2.0,10.0,20,186944,138575000,1.0,1.0,0.992517,350520,350520,141859624,140798154,2.067676,14.626206
+triggered_te,repeated,er,24,51,2.0,10.0,20,869152,138575000,1.0,1.0,0.99892,1629660,1629660,141871440,141718212,2.205919,3.894438
+ospf_te,repeated,er,24,51,2.0,10.0,20,878336,137643750,1.0,1.0,0.99531,1646880,1646880,140917790,140256914,2.269656,20.500103

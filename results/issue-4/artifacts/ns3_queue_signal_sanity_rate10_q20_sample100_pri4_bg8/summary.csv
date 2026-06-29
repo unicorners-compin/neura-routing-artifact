@@ -1,0 +1,4 @@
+method,link_rate_mbps,queue_packets,sample_ms,sim_seconds,primary_rate_mbps,background_rate_mbps,primary_delivery_ratio,primary_mean_delay_ms,route_changes,tail_switches,final_selected_path
+lift,10.0,20,100.0,12.0,4.0,8.0,1.0,6.061656,1,0,b
+triggered_te,10.0,20,100.0,12.0,4.0,8.0,1.0,6.159693,4,2,a
+ospf_te,10.0,20,100.0,12.0,4.0,8.0,1.0,10.548787,12,0,a

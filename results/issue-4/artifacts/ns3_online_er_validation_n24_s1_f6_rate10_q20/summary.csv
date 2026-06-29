@@ -1,0 +1,7 @@
+scenario,method,runs,delivery_mean,delivery_ci95,goodput_mbps_mean,delay_ms_mean,route_changes_mean,tail_switches_mean,logical_control_mb_mean,ns3_control_tx_mb_mean,flows_mean,edges_mean
+hotspot,neura,1,1.0,0.0,7.058544,8.818322,6.0,0.0,0.001024,0.00192,6.0,72.0
+hotspot,triggered_te,1,1.0,0.0,7.058544,7.130123,12.0,6.0,0.002048,0.00384,6.0,72.0
+hotspot,ospf_te,1,1.0,0.0,7.058544,7.132027,12.0,6.0,0.513536,0.96288,6.0,72.0
+repeated,neura,1,1.0,0.0,7.058544,8.818322,6.0,0.0,0.001024,0.00192,6.0,72.0
+repeated,triggered_te,1,1.0,0.0,7.058544,8.128245,24.0,12.0,0.004096,0.00768,6.0,72.0
+repeated,ospf_te,1,1.0,0.0,7.058544,8.130155,24.0,12.0,0.515584,0.96672,6.0,72.0

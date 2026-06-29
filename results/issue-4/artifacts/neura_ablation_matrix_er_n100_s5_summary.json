@@ -1,0 +1,175 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "er",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "seeds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "hotspot_node": 1,
+    "num_flows": 400,
+    "base_demand": 0.2,
+    "hotspot_share": 0.6,
+    "link_capacity": 10.0,
+    "link_delay": 1.0,
+    "queue_capacity": 30.0,
+    "pressure_gain": 1.8,
+    "stress_ticks": 160,
+    "hotspot_start": 40,
+    "hotspot_end": 70,
+    "burst_multiplier": 3.0,
+    "chaos_ticks": 140,
+    "chaos_windows": [
+      "30-45:3.0",
+      "60-75:3.0",
+      "90-105:3.0"
+    ],
+    "delivery_threshold": 0.9,
+    "jobs": 8
+  },
+  "chaos_windows": [
+    {
+      "start": 30,
+      "end": 45,
+      "multiplier": 3.0
+    },
+    {
+      "start": 60,
+      "end": 75,
+      "multiplier": 3.0
+    },
+    {
+      "start": 90,
+      "end": 105,
+      "multiplier": 3.0
+    }
+  ],
+  "rows": [
+    {
+      "scenario": "stress",
+      "variant": "full",
+      "delivery_ratio_mean": 0.936108955144495,
+      "delivery_ratio_ci95": 0.014277652194483703,
+      "path_stretch_mean": 1.0481140961939872,
+      "path_stretch_ci95": 0.019002625218299735,
+      "total_control_bytes_mean": 9507264.0,
+      "total_control_bytes_ci95": 1385703.9464790497,
+      "route_changes_per_node_mean": 99.90599999999999,
+      "route_changes_per_node_ci95": 1.9136426650762164,
+      "burst_route_changes_mean": 22.0258064516129,
+      "burst_route_changes_ci95": 6.801298479196581
+    },
+    {
+      "scenario": "stress",
+      "variant": "no_memory",
+      "delivery_ratio_mean": 0.9380862200886245,
+      "delivery_ratio_ci95": 0.013945155191570633,
+      "path_stretch_mean": 1.0456407191825066,
+      "path_stretch_ci95": 0.017399632881933212,
+      "total_control_bytes_mean": 9181222.4,
+      "total_control_bytes_ci95": 1241333.5248929625,
+      "route_changes_per_node_mean": 99.968,
+      "route_changes_per_node_ci95": 1.9532793979356842,
+      "burst_route_changes_mean": 22.232258064516127,
+      "burst_route_changes_ci95": 6.907760071319329
+    },
+    {
+      "scenario": "stress",
+      "variant": "no_inhibition",
+      "delivery_ratio_mean": 0.9475394582393066,
+      "delivery_ratio_ci95": 0.005102930737611621,
+      "path_stretch_mean": 1.029540638581604,
+      "path_stretch_ci95": 0.014581912707675644,
+      "total_control_bytes_mean": 8041568.0,
+      "total_control_bytes_ci95": 728932.1430224804,
+      "route_changes_per_node_mean": 125.968,
+      "route_changes_per_node_ci95": 2.6134849022712903,
+      "burst_route_changes_mean": 16.438709677419354,
+      "burst_route_changes_ci95": 6.023750572822517
+    },
+    {
+      "scenario": "stress",
+      "variant": "no_slow",
+      "delivery_ratio_mean": 0.9367816675658321,
+      "delivery_ratio_ci95": 0.014023927040067243,
+      "path_stretch_mean": 1.0484892356132858,
+      "path_stretch_ci95": 0.01914203255997538,
+      "total_control_bytes_mean": 9498291.2,
+      "total_control_bytes_ci95": 1376825.3395081798,
+      "route_changes_per_node_mean": 99.896,
+      "route_changes_per_node_ci95": 1.9072079093795726,
+      "burst_route_changes_mean": 21.993548387096773,
+      "burst_route_changes_ci95": 6.785174858510421
+    },
+    {
+      "scenario": "chaos",
+      "variant": "full",
+      "delivery_ratio_mean": 0.9601770294210515,
+      "delivery_ratio_ci95": 0.007706942621077623,
+      "path_stretch_mean": 1.0475533412863365,
+      "path_stretch_ci95": 0.017873106066134327,
+      "total_control_bytes_mean": 9140102.4,
+      "total_control_bytes_ci95": 1295592.0428285515,
+      "route_changes_per_node_mean": 100.078,
+      "route_changes_per_node_ci95": 1.8547276086800464,
+      "service_loss_ticks_mean": 7.4,
+      "service_loss_ticks_ci95": 0.480099989585503,
+      "peak_event_rate_mean": 29681.8,
+      "peak_event_rate_ci95": 1441.339996608711
+    },
+    {
+      "scenario": "chaos",
+      "variant": "no_memory",
+      "delivery_ratio_mean": 0.9601721306154861,
+      "delivery_ratio_ci95": 0.007749325361915014,
+      "path_stretch_mean": 1.0459342480966598,
+      "path_stretch_ci95": 0.01714487026839897,
+      "total_control_bytes_mean": 8939795.2,
+      "total_control_bytes_ci95": 1117975.9923250724,
+      "route_changes_per_node_mean": 100.05,
+      "route_changes_per_node_ci95": 1.9098387240811716,
+      "service_loss_ticks_mean": 7.4,
+      "service_loss_ticks_ci95": 0.480099989585503,
+      "peak_event_rate_mean": 29681.8,
+      "peak_event_rate_ci95": 1441.339996608711
+    },
+    {
+      "scenario": "chaos",
+      "variant": "no_inhibition",
+      "delivery_ratio_mean": 0.9672073928263798,
+      "delivery_ratio_ci95": 0.0029100852341313187,
+      "path_stretch_mean": 1.0321751432435016,
+      "path_stretch_ci95": 0.01522494159153996,
+      "total_control_bytes_mean": 7845280.0,
+      "total_control_bytes_ci95": 679948.9475568448,
+      "route_changes_per_node_mean": 125.904,
+      "route_changes_per_node_ci95": 2.618090496831608,
+      "service_loss_ticks_mean": 8.0,
+      "service_loss_ticks_ci95": 2.7718585822512662,
+      "peak_event_rate_mean": 41610.4,
+      "peak_event_rate_ci95": 3131.616188937591
+    },
+    {
+      "scenario": "chaos",
+      "variant": "no_slow",
+      "delivery_ratio_mean": 0.9604495024854616,
+      "delivery_ratio_ci95": 0.007554275796453697,
+      "path_stretch_mean": 1.047745791079305,
+      "path_stretch_ci95": 0.01797297465055652,
+      "total_control_bytes_mean": 9131392.0,
+      "total_control_bytes_ci95": 1297489.436165077,
+      "route_changes_per_node_mean": 100.096,
+      "route_changes_per_node_ci95": 1.8441256599266753,
+      "service_loss_ticks_mean": 7.4,
+      "service_loss_ticks_ci95": 0.480099989585503,
+      "peak_event_rate_mean": 29681.8,
+      "peak_event_rate_ci95": 1441.339996608711
+    }
+  ]
+}

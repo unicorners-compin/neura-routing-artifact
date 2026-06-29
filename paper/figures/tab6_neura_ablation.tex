@@ -1,0 +1,27 @@
+\begin{table}[h]
+\centering
+\scriptsize
+\caption{Mechanism attribution for NEURA. Panel A isolates rebound suppression, and Panel B isolates burst containment. Bold entries mark the decisive attribution values discussed in the text.}
+\label{tab:neura-ablation}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Variant & \shortstack[c]{Del.\\(\%)} & \shortstack[c]{Rebound\\(\%)} & \shortstack[c]{Post-stage-2\\changes} & \shortstack[c]{Updates\\(k)} \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{A. Rebound suppression}} \\
+\cmidrule(lr){1-5}
+Minimal core & 96.0 & 1.57 & \textbf{21.0} & 208.4 \\
+Memory only & 96.0 & 1.40 & 0.0 & 180.8 \\
+Full NEURA & 96.0 & \textbf{0.28} & 0.0 & 165.5 \\
+\midrule
+Variant & \shortstack[c]{Burst del.\\(\%)} & \shortstack[c]{Route chg.\\per node} & \shortstack[c]{Peak rate\\($10^3$/tick)} & \shortstack[c]{Loss\\ticks} \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{B. Burst containment}} \\
+\cmidrule(lr){1-5}
+Full NEURA & 96.0 & 100.1 & 29.7 & 7.4 \\
+No memory & 96.0 & 100.0 & 29.7 & 7.4 \\
+No switch supp. & 96.7 & \textbf{125.9} & \textbf{41.6} & 8.0 \\
+No slow state & 96.0 & 100.1 & 29.7 & 7.4 \\
+\bottomrule
+\end{tabular*}
+\end{table}

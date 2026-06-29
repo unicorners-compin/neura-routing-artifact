@@ -1,0 +1,13 @@
+method,burst_multiplier,restabilization_ms,restabilization_ci95
+snn_sra,2.0,500.0,0.0
+ospf_te,2.0,14.0,7.839999999999999
+bandit,2.0,10.0,0.0
+snn_sra,3.0,500.0,0.0
+ospf_te,3.0,16.0,4.800999895855028
+bandit,3.0,18.0,11.428665713896788
+snn_sra,4.0,500.0,0.0
+ospf_te,4.0,10.0,0.0
+bandit,4.0,40.0,13.85929291125633
+snn_sra,5.0,500.0,0.0
+ospf_te,5.0,32.0,14.402999687565089
+bandit,5.0,52.0,3.9199999999999995

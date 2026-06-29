@@ -1,0 +1,208 @@
+status,claim,location,source,metric,actual,expected,tolerance,unit
+PASS,NEURA calm control,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"snn_sra mean control, 300-390 ms",1.07712,1.1,0.15,KB / 10 ms
+PASS,Triggered-TE calm control,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"triggered_te mean control, 300-390 ms",311.161,311,2,KB / 10 ms
+PASS,OSPF-TE calm control,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"ospf_te mean control, 300-390 ms",377.879,378,2,KB / 10 ms
+PASS,Bandit calm control,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"bandit mean control, 300-390 ms",626.25,626,3,KB / 10 ms
+PASS,NEURA delivery at shock onset,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"snn_sra delivery_ratio_mean, tick 40",68.5083,68.5,0.15,%
+PASS,NEURA delivery at 450 ms,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"snn_sra delivery_ratio_mean, tick 45",96.6624,96.7,0.15,%
+PASS,NEURA control at 450 ms,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"snn_sra control_bytes_mean, tick 45",79.136,79,1,KB
+PASS,Triggered-TE delivery at shock onset,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"triggered_te delivery_ratio_mean, tick 40",89.6975,89.7,0.15,%
+PASS,Triggered-TE delivery at 450 ms,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"triggered_te delivery_ratio_mean, tick 45",95.4663,95.5,0.15,%
+PASS,Triggered-TE control at 450 ms,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,"triggered_te control_bytes_mean, tick 45",318.573,319,2,KB
+PASS,NEURA burst route changes,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,snn_sra mean route changes during burst,22.0258,22,0.5,changes / 10 ms
+PASS,Triggered-TE burst route changes,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,triggered_te mean route changes during burst,11.8258,12,0.5,changes / 10 ms
+PASS,OSPF-TE burst route changes,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,ospf_te mean route changes during burst,107.781,108,1,changes / 10 ms
+PASS,Bandit burst route changes,neura.tex shock-response text,shock_response_matrix_er_n100_s5_summary.csv,bandit mean route changes during burst,3779.01,3779,5,changes / 10 ms
+PASS,NEURA ER 0-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,snn_baseline,11.7337,11.7,0.15,%
+PASS,NEURA ER 1-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,snn_baseline,88.2663,88.3,0.15,%
+PASS,Triggered-TE ER 0-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,triggered_te,1.48517,1.5,0.15,%
+PASS,Triggered-TE ER 1-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,triggered_te,15.9419,15.9,0.15,%
+PASS,Triggered-TE ER 2-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,triggered_te,49.0983,49.1,0.15,%
+PASS,Triggered-TE ER 3+-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,triggered_te,33.4746,33.5,0.15,%
+PASS,OSPF-TE ER 0-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,ospf_te_t5,1.09524,1.1,0.15,%
+PASS,OSPF-TE ER 1-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,ospf_te_t5,12.8571,12.9,0.15,%
+PASS,OSPF-TE ER 2-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,ospf_te_t5,48,48,0.15,%
+PASS,OSPF-TE ER 3+-hop update share,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_distance_profile.csv,ospf_te_t5,38.0476,38,0.15,%
+PASS,NEURA ER hotspot emitted updates,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_summary.csv,snn_baseline total_emit_events_under_hotspot,44.6,44.6,0.05,updates
+PASS,Triggered-TE ER hotspot emitted updates,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_summary.csv,triggered_te total_emit_events_under_hotspot,392,392,0.05,updates
+PASS,OSPF-TE ER hotspot emitted updates,neura.tex blast-radius text,activation_locality_matrix_er_n100_s5_summary.csv,ospf_te_t5 total_emit_events_under_hotspot,420,420,0.05,updates
+PASS,NEURA RGG within-two-hop share,neura.tex blast-radius text,activation_locality_matrix_rgg_n100_s5_summary.csv,snn_full near_emit_share_h2,100,100,0.05,%
+PASS,OSPF-TE RGG within-two-hop share,neura.tex blast-radius text,activation_locality_matrix_rgg_n100_s5_summary.csv,ospf_te_t5 near_emit_share_h2,27.5714,27.6,0.15,%
+PASS,NEURA RGG weighted emit distance,results README,activation_locality_matrix_rgg_n100_s5_summary.csv,snn_full weighted_mean_emit_distance,0.906849,0.91,0.01,hops
+PASS,OSPF-TE RGG weighted emit distance,results README,activation_locality_matrix_rgg_n100_s5_summary.csv,ospf_te_t5 weighted_mean_emit_distance,3.96619,3.97,0.01,hops
+PASS,snn_sra 3x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,93.6109,93.6,0.08,%
+PASS,snn_sra 3x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,9.50726,9.51,0.08,MB
+PASS,snn_sra 3x route changes per node,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,99.906,100,8,changes / node
+PASS,triggered_te 3x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,97.375,97.4,0.08,%
+PASS,triggered_te 3x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,54.2335,54.2,0.08,MB
+PASS,triggered_te 3x route changes per node,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,117.698,118,8,changes / node
+PASS,ospf_te 3x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,97.3004,97.3,0.08,%
+PASS,ospf_te 3x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,59.6445,59.6,0.08,MB
+PASS,ospf_te 3x route changes per node,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,172.412,172,8,changes / node
+PASS,te_ecmp 3x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,98.2149,98.2,0.08,%
+PASS,te_ecmp 3x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,115.154,115.2,0.08,MB
+PASS,te_ecmp 3x route changes per node,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,242.322,242,8,changes / node
+PASS,bandit 3x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,97.8749,97.9,0.08,%
+PASS,bandit 3x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,99.583,99.6,0.08,MB
+PASS,bandit 3x route changes per node,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,6380.62,6380,8,changes / node
+PASS,snn_sra 5x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,85.8001,85.8,0.08,%
+PASS,snn_sra 5x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,10.5677,10.6,0.08,MB
+PASS,triggered_te 5x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,87.1911,87.2,0.08,%
+PASS,triggered_te 5x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,56.7303,56.7,0.08,MB
+PASS,ospf_te 5x delivery,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,delivery_mean,86.9076,86.9,0.08,%
+PASS,ospf_te 5x control,neura.tex stress-tradeoff text,stress_sweep_matrix_er_n100_s5_summary.csv,control_bytes_mean,59.6445,59.6,0.08,MB
+PASS,snn_sra RGG 3x delivery,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,delivery_mean,51.9282,51.9,0.08,%
+PASS,snn_sra RGG 3x control,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,control_bytes_mean,14.8621,14.86,0.02,MB
+PASS,triggered_te RGG 3x delivery,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,delivery_mean,50.4964,50.5,0.08,%
+PASS,triggered_te RGG 3x control,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,control_bytes_mean,75.6569,75.66,0.02,MB
+PASS,ospf_te RGG 3x delivery,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,delivery_mean,55.4613,55.5,0.08,%
+PASS,ospf_te RGG 3x control,neura.tex spatial robustness text,stress_sweep_matrix_rgg_n100_s5_summary.csv,control_bytes_mean,72.965,72.97,0.02,MB
+PASS,snn_sra chaos total control,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,9.1401,9.14,0.02,MB
+PASS,snn_sra chaos route changes,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,100.078,100,2,changes / node
+PASS,snn_sra chaos service-loss ticks,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,7.4,7.4,0.05,ticks
+PASS,snn_sra chaos burst delivery,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,burst_delivery_mean,96.0177,96,0.15,%
+PASS,ospf_te chaos total control,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,52.0869,52.09,0.02,MB
+PASS,ospf_te chaos route changes,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,209.524,210,2,changes / node
+PASS,ospf_te chaos service-loss ticks,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,7.2,7.2,0.05,ticks
+PASS,ospf_te chaos burst delivery,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,burst_delivery_mean,96.5641,96.6,0.15,%
+PASS,triggered_te chaos total control,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,48.4303,48.43,0.02,MB
+PASS,triggered_te chaos route changes,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,122.062,122,2,changes / node
+PASS,triggered_te chaos service-loss ticks,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,6.8,6.8,0.05,ticks
+PASS,triggered_te chaos burst delivery,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,burst_delivery_mean,96.3857,96.4,0.15,%
+PASS,te_ecmp chaos total control,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,99.8512,99.85,0.02,MB
+PASS,te_ecmp chaos route changes,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,281.674,282,2,changes / node
+PASS,te_ecmp chaos service-loss ticks,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,6.4,6.4,0.05,ticks
+PASS,te_ecmp chaos burst delivery,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,burst_delivery_mean,98.0779,98.1,0.15,%
+PASS,bandit chaos total control,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,87.0142,87.01,0.02,MB
+PASS,bandit chaos route changes,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,5644.68,5645,2,changes / node
+PASS,bandit chaos service-loss ticks,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,4,4,0.05,ticks
+PASS,bandit chaos burst delivery,neura.tex repeated-disturbance text,continuous_chaos_matrix_er_n100_s5_summary.csv,burst_delivery_mean,98.127,98.1,0.15,%
+PASS,snn_sra RGG chaos control,neura.tex robustness text,continuous_chaos_matrix_rgg_n100_s5_summary.csv,total_control_bytes_mean,17.6324,17.63,0.02,MB
+PASS,snn_sra RGG chaos churn,neura.tex robustness text,continuous_chaos_matrix_rgg_n100_s5_summary.csv,route_changes_per_node_mean,209.102,209,1,changes / node
+PASS,ospf_te RGG chaos control,neura.tex robustness text,continuous_chaos_matrix_rgg_n100_s5_summary.csv,total_control_bytes_mean,63.4559,63.46,0.02,MB
+PASS,ospf_te RGG chaos churn,neura.tex robustness text,continuous_chaos_matrix_rgg_n100_s5_summary.csv,route_changes_per_node_mean,773.042,773,1,changes / node
+PASS,snn_sra startup convergence,sm.tex startup text,safety_indicator_matrix_er_n100_s5_summary.csv,startup_full_reachability_ms_mean,40,40,0.05,ms
+PASS,ospf_te startup convergence,sm.tex startup text,safety_indicator_matrix_er_n100_s5_summary.csv,startup_full_reachability_ms_mean,88,88,0.05,ms
+PASS,triggered_te startup convergence,sm.tex startup text,safety_indicator_matrix_er_n100_s5_summary.csv,startup_full_reachability_ms_mean,40,40,0.05,ms
+PASS,bandit startup convergence,sm.tex startup text,safety_indicator_matrix_er_n100_s5_summary.csv,startup_full_reachability_ms_mean,62,62,0.05,ms
+PASS,snn_sra startup control,sm.tex startup text,shock_response_matrix_er_n100_s5_detail.csv,startup_control_bytes_before_full_reachability,1.75805,1.76,0.02,MB
+PASS,ospf_te startup control,sm.tex startup text,shock_response_matrix_er_n100_s5_detail.csv,startup_control_bytes_before_full_reachability,2.73053,2.73,0.02,MB
+PASS,triggered_te startup control,sm.tex startup text,shock_response_matrix_er_n100_s5_detail.csv,startup_control_bytes_before_full_reachability,3.36006,3.36,0.02,MB
+PASS,bandit startup control,sm.tex startup text,shock_response_matrix_er_n100_s5_detail.csv,startup_control_bytes_before_full_reachability,3.21792,3.22,0.02,MB
+PASS,snn_sra path stretch at 3x,sm.tex startup/stretch text,stress_sweep_matrix_er_n100_s5_summary.csv,path_stretch_mean,1.04811,1.048,0.001,stretch
+PASS,ospf_te path stretch at 3x,sm.tex startup/stretch text,stress_sweep_matrix_er_n100_s5_summary.csv,path_stretch_mean,1.00729,1.007,0.001,stretch
+PASS,triggered_te path stretch at 3x,sm.tex startup/stretch text,stress_sweep_matrix_er_n100_s5_summary.csv,path_stretch_mean,1.03129,1.031,0.001,stretch
+PASS,bandit path stretch at 3x,sm.tex startup/stretch text,stress_sweep_matrix_er_n100_s5_summary.csv,path_stretch_mean,1.00206,1.002,0.001,stretch
+PASS,snn_sra gray delivery,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_delivery_mean,92.4758,92.5,0.08,%
+PASS,snn_sra gray epoch control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_control_bytes_mean,20.3008,20.3,0.08,KB / epoch
+PASS,snn_sra gray total control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,6.39264,6.39,0.02,MB
+PASS,triggered_te gray delivery,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_delivery_mean,96.4404,96.4,0.08,%
+PASS,triggered_te gray epoch control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_control_bytes_mean,329.264,329.3,0.08,KB / epoch
+PASS,triggered_te gray total control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,41.6797,41.68,0.02,MB
+PASS,ospf_te gray delivery,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_delivery_mean,97.3412,97.3,0.08,%
+PASS,ospf_te gray epoch control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_control_bytes_mean,378.259,378.3,0.08,KB / epoch
+PASS,ospf_te gray total control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,44.5293,44.53,0.02,MB
+PASS,bandit gray delivery,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_delivery_mean,97.0643,97.1,0.08,%
+PASS,bandit gray epoch control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,impairment_control_bytes_mean,630.677,630.7,0.08,KB / epoch
+PASS,bandit gray total control,sm.tex gray-failure table,gray_failure_matrix_er_n100_s5_summary.csv,total_control_bytes_mean,74.4265,74.43,0.02,MB
+PASS,snn_sra hotspot_3x worst reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_min_reachability_worst,99.8687,99.87,0.01,%
+PASS,snn_sra hotspot_3x worst loop ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_loop_ratio_worst,0.131313,0.13,0.01,%
+PASS,snn_sra hotspot_3x worst blackhole ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_blackhole_ratio_worst,0,0,0.01,%
+PASS,snn_sra hotspot_3x final reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_pair_reachability_mean,100,100,0.01,%
+PASS,snn_sra hotspot_3x final complete routes,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_node_complete_route_ratio_mean,100,100,0.01,%
+PASS,snn_sra continuous_chaos worst reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_min_reachability_worst,99.8687,99.87,0.01,%
+PASS,snn_sra continuous_chaos worst loop ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_loop_ratio_worst,0.131313,0.13,0.01,%
+PASS,snn_sra continuous_chaos worst blackhole ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_blackhole_ratio_worst,0,0,0.01,%
+PASS,snn_sra continuous_chaos final reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_pair_reachability_mean,100,100,0.01,%
+PASS,snn_sra continuous_chaos final complete routes,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_node_complete_route_ratio_mean,100,100,0.01,%
+PASS,snn_sra gray_failure worst reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_min_reachability_worst,99.9394,99.94,0.01,%
+PASS,snn_sra gray_failure worst loop ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_loop_ratio_worst,0.0606061,0.06,0.01,%
+PASS,snn_sra gray_failure worst blackhole ratio,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,post_startup_max_blackhole_ratio_worst,0,0,0.01,%
+PASS,snn_sra gray_failure final reachability,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_pair_reachability_mean,100,100,0.01,%
+PASS,snn_sra gray_failure final complete routes,sm.tex safety table,safety_indicator_matrix_er_n100_s5_summary.csv,final_node_complete_route_ratio_mean,100,100,0.01,%
+PASS,baseline rebound ratio,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,rebound_ratio_after_release,1.5697,1.57,0.01,%
+PASS,baseline post-stage-2 changes,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,post_stage2_route_changes,21,21,0.05,changes
+PASS,baseline emitted updates,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,emitted_updates,208.422,208.4,0.05,k
+PASS,memory_only rebound ratio,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,rebound_ratio_after_release,1.39596,1.4,0.01,%
+PASS,memory_only post-stage-2 changes,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,post_stage2_route_changes,0,0,0.05,changes
+PASS,memory_only emitted updates,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,emitted_updates,180.76,180.8,0.05,k
+PASS,full rebound ratio,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,rebound_ratio_after_release,0.282828,0.28,0.01,%
+PASS,full post-stage-2 changes,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,post_stage2_route_changes,0,0,0.05,changes
+PASS,full emitted updates,tab6_neura_ablation.tex,memory_rebound_matrix_er_n100_s5_summary.csv,emitted_updates,165.54,165.5,0.05,k
+PASS,full ablation burst delivery,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,delivery_ratio_mean,96.0177,96,0.05,%
+PASS,full ablation route changes,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,100.078,100.1,0.1,changes / node
+PASS,full ablation peak event rate,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,peak_event_rate_mean,29.6818,29.7,0.1,10^3 / tick
+PASS,full ablation loss ticks,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,7.4,7.4,0.05,ticks
+PASS,no_memory ablation burst delivery,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,delivery_ratio_mean,96.0172,96,0.05,%
+PASS,no_memory ablation route changes,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,100.05,100,0.1,changes / node
+PASS,no_memory ablation peak event rate,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,peak_event_rate_mean,29.6818,29.7,0.1,10^3 / tick
+PASS,no_memory ablation loss ticks,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,7.4,7.4,0.05,ticks
+PASS,no_inhibition ablation burst delivery,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,delivery_ratio_mean,96.7207,96.7,0.05,%
+PASS,no_inhibition ablation route changes,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,125.904,125.9,0.1,changes / node
+PASS,no_inhibition ablation peak event rate,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,peak_event_rate_mean,41.6104,41.6,0.1,10^3 / tick
+PASS,no_inhibition ablation loss ticks,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,8,8,0.05,ticks
+PASS,no_slow ablation burst delivery,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,delivery_ratio_mean,96.045,96,0.05,%
+PASS,no_slow ablation route changes,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,route_changes_per_node_mean,100.096,100.1,0.1,changes / node
+PASS,no_slow ablation peak event rate,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,peak_event_rate_mean,29.6818,29.7,0.1,10^3 / tick
+PASS,no_slow ablation loss ticks,tab6_neura_ablation.tex,neura_ablation_matrix_er_n100_s5_summary.csv,service_loss_ticks_mean,7.4,7.4,0.05,ticks
+PASS,NEURA ns-3 hotspot control,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_control_tx_bytes,0.35052,0.35,0.01,MB
+PASS,NEURA ns-3 hotspot delivery,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_data_delivery_ratio,99.6958,99.7,0.01,%
+PASS,NEURA ns-3 repeated control,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_control_tx_bytes,0.35052,0.35,0.01,MB
+PASS,NEURA ns-3 repeated delivery,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_data_delivery_ratio,99.2517,99.25,0.01,%
+PASS,Triggered-TE ns-3 hotspot control,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_control_tx_bytes,1.62966,1.63,0.01,MB
+PASS,Triggered-TE ns-3 hotspot delivery,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_data_delivery_ratio,99.956,99.96,0.01,%
+PASS,Triggered-TE ns-3 repeated control,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_control_tx_bytes,1.62966,1.63,0.01,MB
+PASS,Triggered-TE ns-3 repeated delivery,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_data_delivery_ratio,99.892,99.89,0.01,%
+PASS,OSPF-TE ns-3 hotspot control,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_control_tx_bytes,1.64688,1.65,0.01,MB
+PASS,OSPF-TE ns-3 hotspot delivery,tab7_ns3_validation.tex,ns3 replay hotspot summary,ns3_data_delivery_ratio,99.8074,99.81,0.01,%
+PASS,OSPF-TE ns-3 repeated control,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_control_tx_bytes,1.64688,1.65,0.01,MB
+PASS,OSPF-TE ns-3 repeated delivery,tab7_ns3_validation.tex,ns3 replay repeated summary,ns3_data_delivery_ratio,99.531,99.53,0.01,%
+PASS,lift queue route changes,tab7_ns3_validation.tex,ns3 queue-signal summary,route_changes,1,1,0.01,changes
+PASS,lift queue tail switches,tab7_ns3_validation.tex,ns3 queue-signal summary,tail_switches,0,0,0.01,switches
+PASS,lift queue delivery,tab7_ns3_validation.tex,ns3 queue-signal summary,primary_delivery_ratio,100,100,0.01,%
+PASS,triggered_te queue route changes,tab7_ns3_validation.tex,ns3 queue-signal summary,route_changes,4,4,0.01,changes
+PASS,triggered_te queue tail switches,tab7_ns3_validation.tex,ns3 queue-signal summary,tail_switches,2,2,0.01,switches
+PASS,triggered_te queue delivery,tab7_ns3_validation.tex,ns3 queue-signal summary,primary_delivery_ratio,100,100,0.01,%
+PASS,ospf_te queue route changes,tab7_ns3_validation.tex,ns3 queue-signal summary,route_changes,12,12,0.01,changes
+PASS,ospf_te queue tail switches,tab7_ns3_validation.tex,ns3 queue-signal summary,tail_switches,0,0,0.01,switches
+PASS,ospf_te queue delivery,tab7_ns3_validation.tex,ns3 queue-signal summary,primary_delivery_ratio,100,100,0.01,%
+PASS,lift TCP burst goodput,tab7_ns3_validation.tex,ns3 TCP summary,primary_burst_goodput_mbps,6.89224,6.89,0.01,Mbps
+PASS,lift TCP route changes,tab7_ns3_validation.tex,ns3 TCP summary,route_changes,14,14,0.01,changes
+PASS,lift TCP tail switches,tab7_ns3_validation.tex,ns3 TCP summary,tail_switches,7,7,0.01,switches
+PASS,lift TCP cwnd drops,tab7_ns3_validation.tex,ns3 TCP summary,tcp_cwnd_drop_events,399,399,0.01,events
+PASS,triggered_te TCP burst goodput,tab7_ns3_validation.tex,ns3 TCP summary,primary_burst_goodput_mbps,7.3625,7.36,0.01,Mbps
+PASS,triggered_te TCP route changes,tab7_ns3_validation.tex,ns3 TCP summary,route_changes,42,42,0.01,changes
+PASS,triggered_te TCP tail switches,tab7_ns3_validation.tex,ns3 TCP summary,tail_switches,22,22,0.01,switches
+PASS,triggered_te TCP cwnd drops,tab7_ns3_validation.tex,ns3 TCP summary,tcp_cwnd_drop_events,454,454,0.01,events
+PASS,ospf_te TCP burst goodput,tab7_ns3_validation.tex,ns3 TCP summary,primary_burst_goodput_mbps,6.77433,6.77,0.01,Mbps
+PASS,ospf_te TCP route changes,tab7_ns3_validation.tex,ns3 TCP summary,route_changes,21,21,0.01,changes
+PASS,ospf_te TCP tail switches,tab7_ns3_validation.tex,ns3 TCP summary,tail_switches,9,9,0.01,switches
+PASS,ospf_te TCP cwnd drops,tab7_ns3_validation.tex,ns3 TCP summary,tcp_cwnd_drop_events,319,319,0.01,events
+PASS,neura online ER hotspot delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,97.9053,97.9,0.05,%
+PASS,neura online ER hotspot control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.003468,0.003,0.0006,MB
+PASS,neura online ER hotspot route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,10.6,10.6,0.05,changes
+PASS,neura online ER hotspot tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,0.6,0.6,0.05,switches
+PASS,triggered_te online ER hotspot delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,98.2951,98.3,0.05,%
+PASS,triggered_te online ER hotspot control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.007008,0.007,0.0006,MB
+PASS,triggered_te online ER hotspot route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,21.6,21.6,0.05,changes
+PASS,triggered_te online ER hotspot tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,11.6,11.6,0.05,switches
+PASS,ospf_te online ER hotspot delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,99.8789,99.9,0.05,%
+PASS,ospf_te online ER hotspot control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.88536,0.885,0.0006,MB
+PASS,ospf_te online ER hotspot route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,29.2,29.2,0.05,changes
+PASS,ospf_te online ER hotspot tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,12,12,0.05,switches
+PASS,neura online ER repeated delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,95.73,95.7,0.05,%
+PASS,neura online ER repeated control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.003792,0.004,0.0006,MB
+PASS,neura online ER repeated route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,12,12,0.05,changes
+PASS,neura online ER repeated tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,1.4,1.4,0.05,switches
+PASS,triggered_te online ER repeated delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,96.5901,96.6,0.05,%
+PASS,triggered_te online ER repeated control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.014016,0.014,0.0006,MB
+PASS,triggered_te online ER repeated route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,43.2,43.2,0.05,changes
+PASS,triggered_te online ER repeated tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,23.2,23.2,0.05,switches
+PASS,ospf_te online ER repeated delivery,tab8_ns3_online_er_validation.tex,ns3 online ER summary,delivery_mean,99.8288,99.8,0.05,%
+PASS,ospf_te online ER repeated control,tab8_ns3_online_er_validation.tex,ns3 online ER summary,ns3_control_tx_mb_mean,0.89484,0.895,0.0006,MB
+PASS,ospf_te online ER repeated route changes,tab8_ns3_online_er_validation.tex,ns3 online ER summary,route_changes_mean,60.8,60.8,0.05,changes
+PASS,ospf_te online ER repeated tail switches,tab8_ns3_online_er_validation.tex,ns3 online ER summary,tail_switches_mean,25.2,25.2,0.05,switches
+PASS,parameter sweep row count,sm.tex sensitivity table,snn_param_sensitivity_er_n100_s5_summary.csv,rows,12,12,0.01,rows
+PASS,engineering sweep row count,sm.tex sensitivity table,snn_engineering_sensitivity_er_n100_s5_summary.csv,rows,18,18,0.01,rows
+PASS,threshold sweep delivery range,sm.tex sensitivity summary,snn_param_sensitivity_er_n100_s5_summary.csv,max-min burst_delivery_ratio_mean,1.21922,1.22,0.05,percentage points
+PASS,switch-guard control range,sm.tex sensitivity summary,snn_engineering_sensitivity_er_n100_s5_summary.csv,max-min chaos_total_control_mb_mean,0.16855,0.17,0.02,MB

@@ -1,0 +1,80 @@
+{
+  "config": {
+    "issue": 4,
+    "nodes": 50,
+    "edge_prob": 0.06,
+    "ticks": 40,
+    "seeds": [
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "hotspot_node": 1,
+    "hotspot_start": 10,
+    "hotspot_end": 25,
+    "hotspot_pressure": 1.0
+  },
+  "variant_means": {
+    "baseline": {
+      "initial_convergence_tick": 6.6,
+      "peak_event_rate": 2832.6,
+      "hotspot_escape_ratio": 0.011510204081632653,
+      "post_hotspot_route_changes": 25.4,
+      "post_hotspot_fire_ratio": 0.2186346873432234,
+      "stabilization_tick": 29.2,
+      "emitted_updates": 24264.2,
+      "route_changes": 2648.6,
+      "post_event_route_changes": 2648.6,
+      "fire_rate_gain": 1.3238104810275149
+    },
+    "memory_only": {
+      "initial_convergence_tick": 6.6,
+      "peak_event_rate": 2832.6,
+      "hotspot_escape_ratio": 0.015102040816326531,
+      "post_hotspot_route_changes": 6.0,
+      "post_hotspot_fire_ratio": 0.10237283694886315,
+      "stabilization_tick": 28.4,
+      "emitted_updates": 20198.0,
+      "route_changes": 2614.4,
+      "post_event_route_changes": 2614.4,
+      "fire_rate_gain": 1.1222911497497434
+    },
+    "memory_inhibition": {
+      "initial_convergence_tick": 6.6,
+      "peak_event_rate": 2626.4,
+      "hotspot_escape_ratio": 0.009877551020408163,
+      "post_hotspot_route_changes": 0.0,
+      "post_hotspot_fire_ratio": 0.17577834185673225,
+      "stabilization_tick": 26.0,
+      "emitted_updates": 19189.6,
+      "route_changes": 2313.8,
+      "post_event_route_changes": 2313.8,
+      "fire_rate_gain": 1.0937171439205478
+    },
+    "full": {
+      "initial_convergence_tick": 6.6,
+      "peak_event_rate": 2626.4,
+      "hotspot_escape_ratio": 0.009877551020408163,
+      "post_hotspot_route_changes": 0.0,
+      "post_hotspot_fire_ratio": 0.164069604207348,
+      "stabilization_tick": 26.0,
+      "emitted_updates": 19225.4,
+      "route_changes": 2313.8,
+      "post_event_route_changes": 2313.8,
+      "fire_rate_gain": 1.1646810454387724
+    }
+  },
+  "study_means": {
+    "memory_rebound_fire_ratio_delta": -0.11626185039436024,
+    "memory_post_hotspot_route_change_delta": -19.4,
+    "memory_emitted_update_delta": -4066.2,
+    "inhibition_escape_ratio_delta": -0.0052244897959183665,
+    "inhibition_fire_rate_gain_delta": -0.02857400582919558,
+    "inhibition_post_hotspot_route_change_delta": -6.0,
+    "dual_stabilization_tick_delta": 0.0,
+    "dual_post_hotspot_fire_ratio_delta": -0.011708737649384238,
+    "dual_fire_rate_gain_delta": 0.07096390151822454
+  }
+}

@@ -1,0 +1,7 @@
+method,scenario,nodes,seed,flows,edges,primary_delivery_ratio,primary_mean_delay_ms,primary_goodput_mbps,background_delivery_ratio,route_changes,tail_switches,logical_control_bytes,ns3_control_tx_bytes,ns3_control_rx_bytes,control_packets,ospf_emissions
+neura,hotspot,24,51,6,72,1.0,8.818322,7.058544,0.92318,6,0,1024,1920,1920,32,0
+triggered_te,hotspot,24,51,6,72,1.0,7.130123,7.058544,0.92318,12,6,2048,3840,3840,64,0
+ospf_te,hotspot,24,51,6,72,1.0,7.132027,7.058544,0.92318,12,6,513536,962880,962880,16048,111
+neura,repeated,24,51,6,72,1.0,8.818322,7.058544,0.924246,6,0,1024,1920,1920,32,0
+triggered_te,repeated,24,51,6,72,1.0,8.128245,7.058544,0.92318,24,12,4096,7680,7680,128,0
+ospf_te,repeated,24,51,6,72,1.0,8.130155,7.058544,0.92318,24,12,515584,966720,966720,16112,111

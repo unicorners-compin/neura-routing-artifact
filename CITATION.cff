@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this reproduction package, please cite the NEURA manuscript."
+title: "NEURA: Local Excitable Routing Control for Stress-Adaptive Networks"
+type: software
+authors:
+  - family-names: "Authors"
+    given-names: "NEURA"
+date-released: "2026-06-29"

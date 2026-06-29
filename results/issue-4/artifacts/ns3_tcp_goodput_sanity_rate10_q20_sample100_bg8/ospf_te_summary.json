@@ -1,0 +1,20 @@
+{
+  "method": "ospf_te",
+  "queue_packets": 20,
+  "sample_ms": 100.000000,
+  "primary_delivery_ratio": 0.998395,
+  "primary_mean_delay_ms": 14.181121,
+  "primary_tx_bytes": 12735456,
+  "primary_rx_bytes": 12715020,
+  "primary_overall_goodput_mbps": 8.476680,
+  "primary_burst_goodput_mbps": 6.774325,
+  "background_delivery_ratio": 0.919368,
+  "background_tx_bytes": 6137544,
+  "background_rx_bytes": 5642660,
+  "route_changes": 21,
+  "tail_switches": 9,
+  "tcp_cwnd_drop_events": 319,
+  "tcp_cwnd_min_bytes": 6968,
+  "tcp_cwnd_max_bytes": 40736,
+  "final_selected_path": "b"
+}

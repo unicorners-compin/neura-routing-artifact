@@ -1,0 +1,4 @@
+method,link_rate_mbps,queue_packets,sample_ms,sim_seconds,background_rate_mbps,primary_overall_goodput_mbps,primary_burst_goodput_mbps,primary_mean_delay_ms,route_changes,tail_switches,tcp_cwnd_drop_events,tcp_cwnd_min_bytes,tcp_cwnd_max_bytes,final_selected_path
+lift,10.0,20,100.0,12.0,8.0,8.536656,6.892245,15.911317,14,7,399,6968,40736,a
+triggered_te,10.0,20,100.0,12.0,8.0,8.78832,7.362496,10.390218,42,22,454,6968,40736,a
+ospf_te,10.0,20,100.0,12.0,8.0,8.47668,6.774325,14.181121,21,9,319,6968,40736,b

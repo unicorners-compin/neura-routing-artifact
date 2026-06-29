@@ -1,0 +1,4 @@
+method,service_loss_ticks_mean,service_loss_ticks_ci95,post_burst_active_ticks_mean,post_burst_active_ticks_ci95
+auto_snn_sra,7.4,0.480099989585503,72.0,0.0
+auto_ospf_te,7.2,2.352,91.0,0.0
+auto_bandit,4.0,0.6198064213930023,91.0,0.0

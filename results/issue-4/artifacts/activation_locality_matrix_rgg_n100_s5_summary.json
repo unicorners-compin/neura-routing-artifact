@@ -1,0 +1,83 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "rgg",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "geo_radius": 0.17,
+    "ticks": 60,
+    "seeds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "hotspot_start": 25,
+    "hotspot_end": 45,
+    "hotspot_pressure": 1.0
+  },
+  "method_means": {
+    "snn_baseline": {
+      "peak_event_rate": 20558.4,
+      "initial_convergence_tick": null,
+      "active_node_ratio": 0.088,
+      "total_emit_events_under_hotspot": 36.0,
+      "weighted_mean_emit_distance": 0.6819239306753181,
+      "near_emit_share_h2": 1.0,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.31807606932468196,
+      "far_quiet_ratio_h5": 1.0,
+      "outer_quiet_ratio_h3": 1.0,
+      "max_active_distance": 0.8,
+      "p90_emit_radius": 0.8,
+      "distance_emit_correlation": -0.4482833290258833
+    },
+    "snn_full": {
+      "peak_event_rate": 18763.0,
+      "initial_convergence_tick": null,
+      "active_node_ratio": 0.12200000000000003,
+      "total_emit_events_under_hotspot": 36.2,
+      "weighted_mean_emit_distance": 0.9068492781728075,
+      "near_emit_share_h2": 1.0,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.09315072182719242,
+      "far_quiet_ratio_h5": 1.0,
+      "outer_quiet_ratio_h3": 1.0,
+      "max_active_distance": 1.0,
+      "p90_emit_radius": 1.0,
+      "distance_emit_correlation": -0.5471888533453245
+    },
+    "ospf_te_t5": {
+      "peak_event_rate": 15859.8,
+      "initial_convergence_tick": 23.8,
+      "active_node_ratio": 1.0,
+      "total_emit_events_under_hotspot": 420.0,
+      "weighted_mean_emit_distance": 3.9661904761904765,
+      "near_emit_share_h2": 0.27571428571428575,
+      "far_emit_share_h5": 0.3880952380952381,
+      "hotspot_emit_share": 0.01,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 0.0,
+      "max_active_distance": 8.2,
+      "p90_emit_radius": 6.8,
+      "distance_emit_correlation": 0.06440575404107862
+    },
+    "ospf_te_t1": {
+      "peak_event_rate": 74289.6,
+      "initial_convergence_tick": 10.4,
+      "active_node_ratio": 1.0,
+      "total_emit_events_under_hotspot": 2100.0,
+      "weighted_mean_emit_distance": 3.9540000000000006,
+      "near_emit_share_h2": 0.278,
+      "far_emit_share_h5": 0.386,
+      "hotspot_emit_share": 0.01,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 0.0,
+      "max_active_distance": 8.2,
+      "p90_emit_radius": 6.8,
+      "distance_emit_correlation": null
+    }
+  }
+}

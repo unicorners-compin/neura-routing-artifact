@@ -1,0 +1,74 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "ba",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "ticks": 80,
+    "seeds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "hotspot_node": 1,
+    "hotspot_start": 25,
+    "hotspot_end": 55,
+    "num_flows": 400,
+    "base_demand": 0.2,
+    "hotspot_share": 0.6,
+    "burst_multiplier": 3.0,
+    "link_capacity": 10.0,
+    "link_delay": 1.0,
+    "queue_capacity": 30.0,
+    "pressure_gain": 1.8
+  },
+  "method_means": {
+    "snn_sra": {
+      "burst_mean_delivery_ratio": 0.8865627296986286,
+      "burst_mean_loss_ratio": 0.11343727030137626,
+      "burst_mean_delay": 3.5123172621031067,
+      "burst_mean_emitted_this_tick": 2417.425806451613,
+      "hotspot_peak_pressure": 1.8,
+      "post_burst_mean_pressure": 0.05693499999999999,
+      "relief_tick_after_burst": 24.0,
+      "total_emitted_updates": 215648.2,
+      "peak_event_rate": 16919.8
+    },
+    "ospf_te": {
+      "burst_mean_delivery_ratio": 0.9370196616930642,
+      "burst_mean_loss_ratio": 0.06298033830693842,
+      "burst_mean_delay": 3.366512491360903,
+      "burst_mean_emitted_this_tick": 8807.806451612903,
+      "hotspot_peak_pressure": 1.512,
+      "post_burst_mean_pressure": 0.0014459999999999972,
+      "relief_tick_after_burst": 1.6,
+      "total_emitted_updates": 554939.2,
+      "peak_event_rate": 39006.0
+    },
+    "te_ecmp": {
+      "burst_mean_delivery_ratio": 0.9439209498138187,
+      "burst_mean_loss_ratio": 0.056079050186183886,
+      "burst_mean_delay": 3.355411189307373,
+      "burst_mean_emitted_this_tick": 11833.683870967743,
+      "hotspot_peak_pressure": 1.434,
+      "post_burst_mean_pressure": 0.005028357142857142,
+      "relief_tick_after_burst": 3.2,
+      "total_emitted_updates": 771512.8,
+      "peak_event_rate": 61505.0
+    },
+    "bandit": {
+      "burst_mean_delivery_ratio": 0.9781735986043909,
+      "burst_mean_loss_ratio": 0.021826401395609738,
+      "burst_mean_delay": 3.2881089898886415,
+      "burst_mean_emitted_this_tick": 12582.58064516129,
+      "hotspot_peak_pressure": 0.6071999999999995,
+      "post_burst_mean_pressure": 0.000891,
+      "relief_tick_after_burst": 2.0,
+      "total_emitted_updates": 984005.2,
+      "peak_event_rate": 39006.0
+    }
+  }
+}

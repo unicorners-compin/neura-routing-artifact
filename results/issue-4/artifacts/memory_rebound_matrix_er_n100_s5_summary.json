@@ -1,0 +1,72 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "er",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "ticks": 80,
+    "seeds": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "stage1_start": 15,
+    "stage1_end": 30,
+    "stage2_start": 40,
+    "stage2_end": 55,
+    "hotspot_pressure": 1.0
+  },
+  "variant_means": {
+    "baseline": {
+      "initial_convergence_tick": 4.0,
+      "peak_event_rate": 40947.2,
+      "stage1_escape_ratio": 0.01709090909090909,
+      "rebound_ratio_after_release": 0.0156969696969697,
+      "post_stage2_route_changes": 21.0,
+      "return_to_stage1_ratio": 0.013575757575757574,
+      "after_stage2_fire_ratio": 0.0,
+      "emitted_updates": 208421.8,
+      "route_changes": 12354.0,
+      "post_event_route_changes": 12354.0
+    },
+    "memory_only": {
+      "initial_convergence_tick": 4.0,
+      "peak_event_rate": 40947.2,
+      "stage1_escape_ratio": 0.01709090909090909,
+      "rebound_ratio_after_release": 0.01395959595959596,
+      "post_stage2_route_changes": 0.0,
+      "return_to_stage1_ratio": 0.01395959595959596,
+      "after_stage2_fire_ratio": 0.0,
+      "emitted_updates": 180760.0,
+      "route_changes": 12315.8,
+      "post_event_route_changes": 12315.8
+    },
+    "full": {
+      "initial_convergence_tick": 4.0,
+      "peak_event_rate": 29754.0,
+      "stage1_escape_ratio": 0.01581818181818182,
+      "rebound_ratio_after_release": 0.0028282828282828283,
+      "post_stage2_route_changes": 0.0,
+      "return_to_stage1_ratio": 0.0028282828282828283,
+      "after_stage2_fire_ratio": 0.0,
+      "emitted_updates": 165540.2,
+      "route_changes": 9490.6,
+      "post_event_route_changes": 9490.6
+    }
+  },
+  "study_means": {
+    "memory_rebound_ratio_delta": -0.0017373737373737388,
+    "memory_post_stage2_route_change_delta": -21.0,
+    "memory_return_to_stage1_ratio_delta": 0.0003838383838383856,
+    "memory_after_stage2_fire_ratio_delta": 0.0,
+    "memory_emitted_update_delta": -27661.79999999999,
+    "full_rebound_ratio_delta": -0.01286868686868687,
+    "full_post_stage2_route_change_delta": -21.0,
+    "full_return_to_stage1_ratio_delta": -0.010747474747474745,
+    "full_after_stage2_fire_ratio_delta": 0.0,
+    "full_emitted_update_delta": -42881.59999999998
+  }
+}

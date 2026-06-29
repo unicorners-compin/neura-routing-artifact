@@ -1,0 +1,75 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "er",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "ticks": 120,
+    "seeds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "hotspot_node": 1,
+    "degrade_start": 40,
+    "degrade_end": 70,
+    "degrade_factor": 0.3,
+    "num_flows": 400,
+    "base_demand": 0.22,
+    "hotspot_share": 0.7,
+    "link_capacity": 10.0,
+    "link_delay": 1.0,
+    "queue_capacity": 30.0,
+    "pressure_gain": 1.8,
+    "delivery_target": 0.9
+  },
+  "summary": [
+    {
+      "method": "snn_sra",
+      "first_active_tick_mean": 4.4,
+      "relief_tick_mean": 7.0,
+      "impairment_delivery_mean": 0.9247579021425507,
+      "impairment_delivery_ci95": 0.019320759102048654,
+      "impairment_control_bytes_mean": 20300.8,
+      "impairment_control_bytes_ci95": 9312.124570587932,
+      "impairment_peak_pressure_mean": 1.7978399999999997,
+      "total_control_bytes_mean": 6392640.0
+    },
+    {
+      "method": "ospf_te",
+      "first_active_tick_mean": 0.0,
+      "relief_tick_mean": 1.0,
+      "impairment_delivery_mean": 0.973411945070987,
+      "impairment_delivery_ci95": 0.014245505359699814,
+      "impairment_control_bytes_mean": 378259.2,
+      "impairment_control_bytes_ci95": 12897.878768380908,
+      "impairment_peak_pressure_mean": 0.6343200000000003,
+      "total_control_bytes_mean": 44529312.0
+    },
+    {
+      "method": "triggered_te",
+      "first_active_tick_mean": 0.0,
+      "relief_tick_mean": 3.2,
+      "impairment_delivery_mean": 0.9644036076583726,
+      "impairment_delivery_ci95": 0.024469546143588098,
+      "impairment_control_bytes_mean": 329264.10322580644,
+      "impairment_control_bytes_ci95": 13153.7085164323,
+      "impairment_peak_pressure_mean": 1.1639999999999997,
+      "total_control_bytes_mean": 41679667.2
+    },
+    {
+      "method": "bandit",
+      "first_active_tick_mean": 0.0,
+      "relief_tick_mean": 0.0,
+      "impairment_delivery_mean": 0.9706434260086366,
+      "impairment_delivery_ci95": 0.014815247336078662,
+      "impairment_control_bytes_mean": 630677.2645161289,
+      "impairment_control_bytes_ci95": 22782.640669364475,
+      "impairment_peak_pressure_mean": 1.1232000000000013,
+      "total_control_bytes_mean": 74426508.8
+    }
+  ]
+}

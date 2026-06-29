@@ -1,0 +1,82 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "ba",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "ticks": 60,
+    "seeds": [
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "hotspot_start": 25,
+    "hotspot_end": 45,
+    "hotspot_pressure": 1.0
+  },
+  "method_means": {
+    "snn_baseline": {
+      "peak_event_rate": 18071.2,
+      "initial_convergence_tick": 4.0,
+      "active_node_ratio": 0.262,
+      "total_emit_events_under_hotspot": 104.0,
+      "weighted_mean_emit_distance": 0.9488753999623565,
+      "near_emit_share_h2": 1.0,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.05112460003764352,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 1.0,
+      "max_active_distance": 1.0,
+      "p90_emit_radius": 1.0,
+      "distance_emit_correlation": -0.8121596598909069
+    },
+    "snn_full": {
+      "peak_event_rate": 16931.6,
+      "initial_convergence_tick": 4.0,
+      "active_node_ratio": 0.278,
+      "total_emit_events_under_hotspot": 83.4,
+      "weighted_mean_emit_distance": 0.9627513227513227,
+      "near_emit_share_h2": 1.0,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.03724867724867724,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 1.0,
+      "max_active_distance": 1.0,
+      "p90_emit_radius": 1.0,
+      "distance_emit_correlation": -0.8405469382941997
+    },
+    "ospf_te_t5": {
+      "peak_event_rate": 39006.0,
+      "initial_convergence_tick": 16.0,
+      "active_node_ratio": 1.0,
+      "total_emit_events_under_hotspot": 500.0,
+      "weighted_mean_emit_distance": 1.8800000000000001,
+      "near_emit_share_h2": 0.834,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.01,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 0.0,
+      "max_active_distance": 3.2,
+      "p90_emit_radius": 2.6,
+      "distance_emit_correlation": null
+    },
+    "ospf_te_t1": {
+      "peak_event_rate": 39006.0,
+      "initial_convergence_tick": 4.0,
+      "active_node_ratio": 1.0,
+      "total_emit_events_under_hotspot": 2100.0,
+      "weighted_mean_emit_distance": 1.8800000000000001,
+      "near_emit_share_h2": 0.834,
+      "far_emit_share_h5": 0.0,
+      "hotspot_emit_share": 0.01,
+      "far_quiet_ratio_h5": 0.0,
+      "outer_quiet_ratio_h3": 0.0,
+      "max_active_distance": 3.2,
+      "p90_emit_radius": 2.6,
+      "distance_emit_correlation": null
+    }
+  }
+}

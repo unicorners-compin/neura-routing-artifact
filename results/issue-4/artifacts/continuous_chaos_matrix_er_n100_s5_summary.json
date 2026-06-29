@@ -1,0 +1,146 @@
+{
+  "config": {
+    "issue": 4,
+    "topology": "er",
+    "nodes": 100,
+    "edge_prob": 0.06,
+    "ba_attach": 2,
+    "ticks": 140,
+    "seeds": [
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "hotspot_node": 1,
+    "burst_windows": [
+      "30-45:3.0",
+      "60-75:3.0",
+      "90-105:3.0"
+    ],
+    "num_flows": 400,
+    "base_demand": 0.2,
+    "hotspot_share": 0.6,
+    "link_capacity": 10.0,
+    "link_delay": 1.0,
+    "queue_capacity": 30.0,
+    "pressure_gain": 1.8,
+    "delivery_threshold": 0.9,
+    "jobs": 8
+  },
+  "burst_windows": [
+    {
+      "start": 30,
+      "end": 45,
+      "multiplier": 3.0
+    },
+    {
+      "start": 60,
+      "end": 75,
+      "multiplier": 3.0
+    },
+    {
+      "start": 90,
+      "end": 105,
+      "multiplier": 3.0
+    }
+  ],
+  "rows": [
+    {
+      "method": "snn_sra",
+      "service_loss_ticks_mean": 7.4,
+      "service_loss_ticks_ci95": 0.480099989585503,
+      "service_loss_area_mean": 2.8216412240658957,
+      "service_loss_area_ci95": 0.5504070821547897,
+      "post_burst_active_ticks_mean": 72.0,
+      "post_burst_active_ticks_ci95": 0.0,
+      "recovery_failures_mean": 2.0,
+      "recovery_failures_ci95": 0.0,
+      "total_control_bytes_mean": 9140102.4,
+      "total_control_bytes_ci95": 1295592.0428285515,
+      "route_changes_per_node_mean": 100.078,
+      "route_changes_per_node_ci95": 1.8547276086800464,
+      "peak_route_changes_per_tick_mean": 5031.6,
+      "peak_route_changes_per_tick_ci95": 128.66560292479102,
+      "burst_delivery_mean": 0.9601770294210515,
+      "burst_delivery_ci95": 0.007706942621077623
+    },
+    {
+      "method": "ospf_te",
+      "service_loss_ticks_mean": 7.2,
+      "service_loss_ticks_ci95": 2.352,
+      "service_loss_area_mean": 2.561581381158705,
+      "service_loss_area_ci95": 0.49200321962391436,
+      "post_burst_active_ticks_mean": 91.0,
+      "post_burst_active_ticks_ci95": 0.0,
+      "recovery_failures_mean": 2.0,
+      "recovery_failures_ci95": 0.0,
+      "total_control_bytes_mean": 52086892.8,
+      "total_control_bytes_ci95": 1963890.4429187432,
+      "route_changes_per_node_mean": 209.52399999999997,
+      "route_changes_per_node_ci95": 7.087858655024097,
+      "peak_route_changes_per_tick_mean": 2816.0,
+      "peak_route_changes_per_tick_ci95": 178.93844662341294,
+      "burst_delivery_mean": 0.9656410349838025,
+      "burst_delivery_ci95": 0.014980957487016892
+    },
+    {
+      "method": "triggered_te",
+      "service_loss_ticks_mean": 6.8,
+      "service_loss_ticks_ci95": 4.400189086846154,
+      "service_loss_area_mean": 1.9324046525980432,
+      "service_loss_area_ci95": 0.3907276529507223,
+      "post_burst_active_ticks_mean": 91.0,
+      "post_burst_active_ticks_ci95": 0.0,
+      "recovery_failures_mean": 2.0,
+      "recovery_failures_ci95": 0.0,
+      "total_control_bytes_mean": 48430272.0,
+      "total_control_bytes_ci95": 1570481.626650543,
+      "route_changes_per_node_mean": 122.06199999999998,
+      "route_changes_per_node_ci95": 4.583791788290561,
+      "peak_route_changes_per_tick_mean": 5082.8,
+      "peak_route_changes_per_tick_ci95": 131.55440571869875,
+      "burst_delivery_mean": 0.9638572735613155,
+      "burst_delivery_ci95": 0.03543748928366749
+    },
+    {
+      "method": "te_ecmp",
+      "service_loss_ticks_mean": 6.4,
+      "service_loss_ticks_ci95": 1.3293366766925523,
+      "service_loss_area_mean": 2.291037564634329,
+      "service_loss_area_ci95": 0.13658399621362202,
+      "post_burst_active_ticks_mean": 91.0,
+      "post_burst_active_ticks_ci95": 0.0,
+      "recovery_failures_mean": 2.0,
+      "recovery_failures_ci95": 0.0,
+      "total_control_bytes_mean": 99851206.4,
+      "total_control_bytes_ci95": 5704601.980122716,
+      "route_changes_per_node_mean": 281.674,
+      "route_changes_per_node_ci95": 52.378556305205656,
+      "peak_route_changes_per_tick_mean": 3653.8,
+      "peak_route_changes_per_tick_ci95": 213.33985521697534,
+      "burst_delivery_mean": 0.9807785184140727,
+      "burst_delivery_ci95": 0.013373699155231669
+    },
+    {
+      "method": "bandit",
+      "service_loss_ticks_mean": 4.0,
+      "service_loss_ticks_ci95": 0.6198064213930023,
+      "service_loss_area_mean": 1.8875030544986218,
+      "service_loss_area_ci95": 0.09370456254663474,
+      "post_burst_active_ticks_mean": 91.0,
+      "post_burst_active_ticks_ci95": 0.0,
+      "recovery_failures_mean": 2.0,
+      "recovery_failures_ci95": 0.0,
+      "total_control_bytes_mean": 87014240.0,
+      "total_control_bytes_ci95": 3200680.6361796893,
+      "route_changes_per_node_mean": 5644.677999999999,
+      "route_changes_per_node_ci95": 290.70688069372966,
+      "peak_route_changes_per_tick_mean": 7447.6,
+      "peak_route_changes_per_tick_ci95": 533.8320421405967,
+      "burst_delivery_mean": 0.9812702088282332,
+      "burst_delivery_ci95": 0.01668960825748894
+    }
+  ]
+}

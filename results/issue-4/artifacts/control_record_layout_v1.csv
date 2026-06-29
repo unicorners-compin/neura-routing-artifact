@@ -1,0 +1,7 @@
+field,bytes,description
+destination_id,4,Destination identifier
+selected_next_hop,4,Selected next-hop identifier
+advertised_route_quality,4,Advertised downstream route quality
+local_stress,4,Current local stress value
+version_and_lifetime,8,Version sequence and bounded lifetime metadata
+reserved_control_metadata,8,Reserved control metadata budget
