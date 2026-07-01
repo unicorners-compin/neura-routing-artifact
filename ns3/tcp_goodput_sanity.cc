@@ -21,7 +21,7 @@ namespace {
 
 struct ExperimentConfig
 {
-    std::string method{"lift"};
+    std::string method{"neura"};
     std::string summaryJson;
     std::string timelineCsv;
     std::string cwndCsv;
@@ -195,7 +195,7 @@ void MaybeSwitch(TopologyState* state, const std::string& nextPath, double now)
         state->controller.tailSwitches += 1;
     }
     state->controller.lastSwitchTime = now;
-    if (state->config.method == "lift")
+    if (state->config.method == "neura" || state->config.method == "lift")
     {
         state->controller.nextAllowedSwitch = now + state->config.liftRefractoryMs / 1000.0;
     }
@@ -223,7 +223,7 @@ void ControllerStep(TopologyState* state)
     const double currentMemory = (ctl.selectedPath == "a") ? ctl.memoryA : ctl.memoryB;
     const double altMemory = (ctl.selectedPath == "a") ? ctl.memoryB : ctl.memoryA;
 
-    if (state->config.method == "lift")
+    if (state->config.method == "neura" || state->config.method == "lift")
     {
         const double diff =
             (currentBase + currentQ + 0.35 * currentMemory) - (altBase + altQ + 0.35 * altMemory);
@@ -403,7 +403,7 @@ int MainBody(int argc, char* argv[])
 {
     ExperimentConfig config;
     CommandLine cmd(__FILE__);
-    cmd.AddValue("method", "lift, triggered_te, or ospf_te", config.method);
+    cmd.AddValue("method", "neura, triggered_te, ospf_te, or legacy lift", config.method);
     cmd.AddValue("summaryJson", "Output summary JSON path", config.summaryJson);
     cmd.AddValue("timelineCsv", "Output controller timeline CSV path", config.timelineCsv);
     cmd.AddValue("cwndCsv", "Output TCP cwnd CSV path", config.cwndCsv);

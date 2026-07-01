@@ -18,7 +18,7 @@ def run(cmd: list[str]) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Run small TCP goodput ns-3 sanity check.")
     ap.add_argument("--issue", type=int, default=4)
-    ap.add_argument("--methods", default="lift,triggered_te,ospf_te")
+    ap.add_argument("--methods", default="neura,triggered_te,ospf_te")
     ap.add_argument("--link-rate-mbps", type=float, default=10.0)
     ap.add_argument("--queue-packets", type=int, default=20)
     ap.add_argument("--sample-ms", type=float, default=100.0)
