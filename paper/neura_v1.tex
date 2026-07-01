@@ -213,7 +213,7 @@ In this section, the local excitable construction is specified and the resulting
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/neura-method(1).png}
+\includegraphics[width=1.0\textwidth]{figures/neura-method-with-tref.pdf}
 \caption{Local excitable construction in NEURA. Neural local dynamics primitives, namely integration, threshold activation, refractory suppression, and short term memory, are translated into routing control semantics including local accumulation, sparse triggering, burst suppression, and recovery hysteresis. The resulting control behavior targets localized, sparse, and recovery aware adaptation, with hop bounded propagation and guarded switching under stress.}
 \label{fig:method}
 \end{figure*}
@@ -679,7 +679,10 @@ The main implication is that severe local stress does not have to force proporti
 The simulation code, ns-3 validation programs, generated figure inputs, and result-audit outputs are available in the public reproduction repository at \url{https://github.com/unicorners-compin/neura-routing-artifact}. The internal code identifier \texttt{snn\_sra} is a development codename for NEURA and does not denote a separate method.
 
 \section*{Funding}
-This work was supported by the National Key Research and Development Program of China (No. 2024YFE0200300).
+This work was supported by the National Key Research and Development Program of China (No. 2024YFE0200300). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+During the preparation of this work, the authors used OpenAI ChatGPT and Codex for language editing, organization, and consistency checks. After using these tools, the authors reviewed and edited the content as needed and take full responsibility for the content of the article.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs/references}

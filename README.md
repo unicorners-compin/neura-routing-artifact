@@ -93,6 +93,18 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error neura_v1.tex
 ```
 
 The cover letter source is also provided in `paper/cover_letter.tex`.
+The separate Elsevier highlights file is provided in `paper/highlights.tex`.
+
+## Submission Snapshot
+
+The `v1.0.0` release corresponds to the 2026-07-01 submission snapshot.
+Convenience copies of the submission artifacts are provided under
+`results/issue-4/artifacts/`:
+
+- `neura_submission_main.pdf`
+- `neura_submission_supplementary.pdf`
+- `neura_submission_cover_letter.pdf`
+- `neura_elsevier_source_2026-07-01.zip`
 
 ## License
 

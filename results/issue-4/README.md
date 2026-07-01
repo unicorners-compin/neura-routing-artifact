@@ -18,9 +18,11 @@ Public naming:
 
 The final submission package generated from the current paper sources is:
 
-- `artifacts/neura_submission_main.pdf`
-- `artifacts/neura_submission_supplementary.pdf`
-- `artifacts/neura_submission_cover_letter.pdf`
+- `artifacts/neura_submission_main.pdf` (`paper/neura_v1.tex`, refreshed 2026-07-01)
+- `artifacts/neura_submission_supplementary.pdf` (`paper/sm.tex`, refreshed 2026-07-01)
+- `artifacts/neura_submission_cover_letter.pdf` (`paper/cover_letter.tex`, refreshed 2026-07-01)
+- `artifacts/neura_elsevier_source_2026-07-01.zip` (editable LaTeX source package for Elsevier submission)
+- `paper/highlights.tex` (separate editable highlights file)
 - `artifacts/neura_overleaf_upload_2026-06-18.zip`
 
 The current manuscript uses the following `ER-100`, `5`-seed artifacts as its primary evidence:

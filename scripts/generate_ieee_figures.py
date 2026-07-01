@@ -799,7 +799,7 @@ def gen_fig4_startup_and_stretch() -> None:
             }
         )
     write_csv(FIG / "fig4_startup_and_stretch.csv", out_rows, list(out_rows[0].keys()))
-    bar_key = {"snn_sra": "NEURA", "ospf_te": "OSPF", "triggered_te": "Triggered", "bandit": "Bandit"}
+    bar_key = {"snn_sra": "NEURA", "ospf_te": "OSPF-TE", "triggered_te": "Triggered-TE", "bandit": "Bandit"}
     xcoords = ",".join(bar_key[m] for m in methods)
     xticklabels = ",".join(bar_key[m] for m in methods)
     startup_parts = "\n".join(
@@ -1051,7 +1051,10 @@ ymin=0,
 
 def gen_fig6_neura_ablation() -> None:
     rebound_rows = read_csv_rows(select_artifact("memory_rebound_matrix_er_n100_s*_summary.csv"))
-    chaos_rows = read_csv_rows(select_artifact("neura_ablation_matrix_er_n100_s*_summary.csv"))
+    try:
+        chaos_rows = read_csv_rows(select_artifact("neura_ablation_matrix_er_n100_s*_summary.csv"))
+    except FileNotFoundError:
+        chaos_rows = read_csv_rows(select_artifact("lift_ablation_matrix_er_n100_s*_summary.csv"))
 
     memory_variants = ["baseline", "memory_only", "full"]
     chaos_variants = ["full", "no_memory", "no_inhibition", "no_slow"]
