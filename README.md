@@ -97,7 +97,7 @@ The separate Elsevier highlights file is provided in `paper/highlights.tex`.
 
 ## Submission Snapshot
 
-The `v1.0.0` release corresponds to the 2026-07-01 submission snapshot.
+The `v1.0.0` release corresponds to the 2026-07-02 final submission snapshot.
 Convenience copies of the submission artifacts are provided under
 `results/issue-4/artifacts/`:
 
